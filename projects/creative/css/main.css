@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto', sans-serif ;
+}
+button {
+    cursor: pointer;
+}
+header {
+    padding-top: 40px;
+    background-image: url(../img/bg-1.png);
+    color:white;
+    padding-bottom: 150px;
+    margin-bottom: 90px;
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.header-nav i {
+    font-size: 20px;
+}
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.header-nav a:first-child {
+    margin-right: 30px;
+}
+.header-nav a:nth-child(2) {
+    margin-right: 26px;
+    display: flex;
+    align-items: center;
+}
+.header-nav a i {
+    margin-right: 7px;
+}
+.header-social {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.header-social i:not(:last-child) {
+    margin-right: 24px;
+}
+.header-logo {
+    font-size: 18px;
+}
+h1 {
+    font-size: 53px;;
+}
+.header-nav a {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.header-main {
+    width: 547px;
+}
+.header-main h1 {
+    margin-bottom: 20px;
+}
+.header-main p {
+    font-size:18px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.video-button {
+    width:179px;
+    height:54px;
+    background-color:#F44336;
+    font-size: 14px;
+    box-shadow:none;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    text-transform: uppercase;
+}
+.video-button i {
+    color:white;
+    background-color:#F44336;
+}
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+.product {
+    margin-bottom: 200px;
+}
+.product-about p {
+    font-size: 17.5px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    color:#999999;
+}
+.product-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 328px;
+    height: 201px;
+    text-align: center;
+}
+.feature p {
+    font-size: 14px;
+    color:#999999;
+}
+.product-about {
+    margin-bottom:160px;
+}
+.team-items {
+    margin-top: 70px;
+    margin-bottom: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team-item {
+    width: 340px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+.team-description {
+    font-size: 14px;
+    color:#999999;
+    margin-bottom: 20px;
+}
+ .team-profession {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.team-social {
+    color: #999999;
+    font-size: 18px;
+}
+.team-social i:not(:last-child) {
+    margin-right:25px;
+}
+.subscribe {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.subscribe p {
+    color: #999999;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+input[type="text"] {
+    width: 49%;
+    border:none;
+    border-bottom:1px solid #D2D2D2;
+    padding-bottom: 7px;
+    float:left
+}
+input[type="email"] {
+    width: 49%;
+    border:none;
+    border-bottom:1px solid #D2D2D2;
+    margin-left: 10px;
+    padding-bottom: 7px;
+    float: right;
+}
+input::placeholder {
+    color:#999999;
+    font-size: 14px;
+}
+textarea {
+    margin-top: 30px;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #D2D2D2;
+    color:#999999;
+    font-size: 14px;
+    clear:both;
+}
+.message-button {
+    display:block;
+    margin: 25px auto 0 auto;
+    width: 148px;
+    height:41px;
+    background-color:#9C27B0;
+    border: none;
+    color:white;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+footer {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    background-color:#CCCCCC;
+}
+footer a {
+    text-decoration: none;
+    color:#333333;
+    text-transform: uppercase;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer-left a:not(:last-child){
+    margin-right: 33px;
+}
+@media (min-width:320px) and (max-width: 767px) {
+    header {
+        background-position: center;
+    }
+    .product-features {
+        flex-direction: column;
+    }
+    .feature:not(:last-child) {
+        margin-bottom: 105px;
+    }
+    .team-items {
+        flex-direction: column;
+
+    }
+    .team-item {
+        width:100%;
+    }
+    .team-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .header-main {
+        width:716px;
+    }
+    .product-features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team-items {
+        flex-wrap: wrap;
+    }
+    .header-main {
+        width: 300px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-social {
+        flex-direction: column;
+    }
+    .header-social i {
+        margin-bottom: 10px;
+    }
+    .product-about p {
+        width:100%;
+    }
+    .subscribe {
+        width:100%;
+    }
+    input[type="text"] {
+        width:100%;
+
+    }
+    input[type="email"] {
+        width:100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    footer .container {
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        font-size: 12px;
+        flex-basis:100%;
+        font-weight: 600;
+    }
+    .footer-copyright {
+        font-size: 14px;
+        margin: 30px auto 0 auto;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    header {
+        background-position: center;
+    }
+    .product-features {
+        flex-direction: column;
+    }
+    .feature:not(:last-child) {
+        margin-bottom: 105px;
+    }
+    .team-items {
+        flex-direction: column;
+
+    }
+    .team-item {
+        width:100%;
+    }
+    .team-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .header-main {
+        width:716px;
+    }
+    .product-about p {
+        width:100%;
+    }
+    .subscribe {
+        width:100%;
+    }
+    input[type="text"] {
+        width:100%;
+
+    }
+    input[type="email"] {
+        width:100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    footer .container {
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        font-size: 12px;
+        flex-basis:100%;
+        font-weight: 600;
+    }
+    .footer-copyright {
+        font-size: 14px;
+        margin: 30px auto 0 auto;
+       
+    }
+
+}
