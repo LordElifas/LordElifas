@@ -1,0 +1,630 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Muli';
+
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+header {
+	padding-top: 40px;
+}
+h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.header_top {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 60px;
+}
+.logo {
+	background-color: #458FF6;
+	font-size: 24px;
+	font-weight: bold;
+	color:#FFFFFF;
+	height: 41px;
+	width: 41px;
+	border-radius: 50%;
+	text-align:center;
+	vertical-align: middle;
+	padding: 5px;
+}
+.button {
+	height: 60px;
+	width: 200px;
+	display: block;
+	border-radius: 30px;
+	text-align: center;
+	padding: 18px;
+	font-size: 18px;
+}
+.header_logo {
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+}
+.header_logo span, .footer_logo span {
+	font-weight: bold;
+	margin-left: 10px;
+}
+.header_nav {
+	display: flex;
+	justify-content: space-around;
+}
+.header_nav li {
+	margin-right: 30px;
+}
+.header_nav a {
+	color: #1F1534;
+}
+.header_nav li:first-child {
+	font-weight: bold;
+}
+
+.hamburger_menu {
+	display:none;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right:-100%;
+  width: 300px;
+  height: 60%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+.header_button {
+	background-color: #458FF6;
+	color: #FFFFFF;
+	margin-top: 50px;
+}
+.header_about {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header_about_aside {
+	width: 400px;
+}
+.header_about_aside h1 {
+	font-size: 41px;
+}
+.header_about_aside p{
+	color: #7D7987;
+	font-size: 21px;
+}
+.header_offers {
+	margin-top: 190px;
+}
+.header_offers h2 {
+	text-align: center;
+}
+.header_offers>p {
+	text-align: center;
+	width: 950px;
+	margin: 0 auto;
+}
+.header_services {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-top: 70px;
+}
+.header_services h2 {
+	text-align: center;
+}
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 15px;
+	flex-basis: 30%;
+}
+.service p {
+	color: #7D7987;
+}
+.service_title {
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.service_button, .application_button {
+	color: #458FF6;
+	border: 1px solid #458FF6;
+	margin: 40px auto 0 auto;
+}
+main {
+	margin-top: 150px;
+}
+.advantages {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.advantages_about {
+	width: 400px;
+}
+h2 + p {
+	color: #7D7987;
+	font-size: 18px;
+}
+.advantages_about .service_button {
+	margin-left: 0;
+	margin-right: 0;
+}
+.main-application {
+	margin-bottom: 250px;
+	margin-top: 250px;
+}
+.application {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.application_about {
+	width: 370px;
+}
+.application_button {
+	margin-left: 0;
+	margin-right: 0;
+}
+.vector_arrow {
+	margin-left: 10px;
+
+}
+.main_reviews {
+	
+}
+.reviews {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	background-color: #67C3F3;
+	color: #FFFFFF;
+	border-radius: 20px;
+}
+.reviews h2 {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	margin-bottom: 70px;
+}
+.review {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.customer {
+	width: 360px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.customer_info {
+
+}
+.customer_name {
+	color:hsl(0,0%,100%)
+	font-size:22px;
+	font-weight: bold;
+}
+.customer_status {
+	color: hsl(0,0%,85%);
+	font-size: 18px;
+}
+.customer_review  {
+	font-size: 19px;
+	color: hsl(0,0%,90%);
+	width: 400px;
+}
+.slider {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 330px;
+	margin-top: 30px;
+}
+.main_articles {
+	padding-bottom: 150px;
+	margin-top: 200px;
+}
+.articles h2 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 120px;
+}
+.list_articles {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.article {
+	width: 350px;
+}
+.article_about {
+	padding-left: 35px;
+	padding-right: 55px;
+}
+.article_about h3 {
+	font-size: 21px;
+}
+.article_about p {
+	font-size: 16px;
+	color: #7D7987;
+}
+.article_button {
+	text-align: left;
+	padding-left:0;
+}
+.articles_button {
+	border: 1px solid #458FF6;
+	margin: 0 auto;
+}
+footer {
+	padding-top: 110px;
+	background-color: #458FF6;
+	color: #FFFFFF;
+	padding-bottom: 100px;
+}
+.footer {
+	display: flex;
+	justify-content: space-around;
+}
+.footer_about {
+	width: 380px;
+}
+.copyright {
+	margin-top: 40px;
+}
+.footer_logo {
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.footer_logo .logo {
+	color: #458FF6;
+	background-color: #FFFFFF;
+}
+.footer ul {
+	display: flex;
+	flex-direction: column;
+}
+.footer li:first-child {
+	font-weight: bold;
+	font-size: 20px;
+}
+.footer li {
+	margin-bottom: 20px;
+}
+@media only screen and (max-width: 320px) {
+	.header_nav {
+		display: none;
+	}
+	.hamburger_menu {
+		display: block;
+	}
+	.container {
+		width:100%;
+	}
+	.header_about {
+		flex-direction: column;
+		
+		align-items: center;
+	}
+	.header_about_image img, .application_image img, .advantages_image img{
+		width:150px;
+		height:70px;
+	}
+	.header_offers h2+p {
+		width: 80%;
+	}
+	.header_services, .application, .advantages, .review, .list_articles {
+		flex-direction: column;
+		align-items: center;
+	}
+	.button {
+		display:block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.article {
+		margin-bottom: 30px;
+	}
+	.list_articles {
+		margin-bottom:0;
+	}
+	.header_button {
+		margin: 0 auto;
+	}
+	.header_about_aside {
+		order:2;
+	}
+	.header_about_image {
+		order:1;
+	}
+	.header_button {
+		margin-top: 60px;
+	}
+	.application_about {
+		order:2;
+	}
+	.application_image {
+		order:1;
+	}
+	.article_image {
+		width:150px;
+		height:70px;
+	}
+	.footer_about {
+		flex-basis:90%;
+	}
+	.footer_menu {
+		flex-basis:25%;
+	}
+	.footer_region {
+		flex-basis:25%;
+	}
+	.footer_help {
+		flex-basis:25%;
+	}
+	.footer {
+		flex-wrap:wrap;
+	}
+	.service {
+		flex-basis: 90%;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	
+	.header_nav {
+		display: none;
+	}
+	.hamburger_menu {
+		display: block;
+	}
+	.container {
+		width:100%;
+	}
+	.header_about {
+		flex-direction: column;
+		
+		align-items: center;
+	}
+	.header_about_image img, .application_image img, .advantages_image img{
+		width:200px;
+		height:150px;
+	}
+	.header_offers h2+p {
+		width: 80%;
+	}
+	.header_services, .application, .advantages, .review, .list_articles {
+		flex-direction: column;
+		align-items: center;
+	}
+	.button {
+		display:block;
+		text-align: center;
+	}
+	.article {
+		margin-bottom: 30px;
+	}
+	.list_articles {
+		margin-bottom:0;
+	}
+	.header_button {
+		margin: 0 auto;
+	}
+	.header_about_aside {
+		order:2;
+	}
+	.header_about_image {
+		order:1;
+	}
+	.header_button {
+		margin-top: 60px;
+	}
+	.application_about {
+		order:2;
+	}
+	.application_image {
+		order:1;
+	}
+	.article_image {
+		width:200px;
+		height:100px;
+	}
+	.footer_about {
+		flex-basis:90%;
+	}
+	.footer_menu {
+		flex-basis:25%;
+	}
+	.footer_region {
+		flex-basis:25%;
+	}
+	.footer_help {
+		flex-basis:25%;
+	}
+	.footer {
+		flex-wrap:wrap;
+	}
+	.service {
+		flex-basis: 90%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.header_nav {
+		display: none;
+	}
+	.hamburger_menu {
+		display: block;
+	}
+	.container {
+		width:100%;
+	}
+	.header_about_image img, .application_image img, .advantages_image img{
+		width:300px;
+		height:250px;
+	}
+	.header_offers h2+p {
+		width: 80%;
+	}
+	.header_about, .header_services, .application, .advantages, .review, .list_articles {
+		flex-direction: column;
+		align-items: center;
+	}
+	.button {
+		display:block;
+		text-align: center;
+	}
+	.article {
+		margin-bottom: 30px;
+	}
+	.list_articles {
+		margin-bottom:0;
+	}
+	.header_button {
+		margin: 0 auto;
+	}
+	.header_about_aside {
+		order:2;
+	}
+	.header_about_image {
+		order:1;
+	}
+	.header_button {
+		margin-top: 60px;
+	}
+	.application_about {
+		order:2;
+	}
+	.application_image {
+		order:1;
+	}
+	.article_image {
+		width:300px;
+		height:220px;
+	}
+	.footer_about {
+		flex-basis:90%;
+	}
+	.footer_menu {
+		flex-basis:25%;
+	}
+	.footer_region {
+		flex-basis:25%;
+	}
+	.footer_help {
+		flex-basis:25%;
+	}
+	.footer {
+		flex-wrap:wrap;
+	}
+	.service {
+		flex-basis: 40%;
+	}
+
+}
