@@ -1,0 +1,349 @@
+*   
+    box-sizing: border-box
+.container
+    width: 90%
+    margin: 0 auto
+.header
+    background: url(../img/bg1.png) no-repeat
+    background-size: cover
+    color: white
+    padding: 20px 0 90px 0
+    &_top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .header_creaters
+            width: 20%
+            font-size: 12px
+        .header_creaters span
+            font-size: 18px
+        .header_call
+            .header_call-number
+                font-size: 18px
+                text-align: right
+            .btn_call-number
+                display: block
+                font-weight: 500
+                padding-top: 8px
+                text-align: center
+                font-size: 12px
+                text-transform: uppercase
+                width: 150px
+                height: 30px
+                border-radius: 5px
+                border: none
+                background-color: #E80000
+                margin-top: 10px
+                cursor: pointer
+    &_main
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 80px
+        h1
+            font-size: 42px
+            font-weight: 700
+            text-transform: uppercase
+        .subtitle 
+            font-size: 24px
+            font-weight: 500
+            text-transform: uppercase
+    &_features
+        width: 40%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 60px
+    &_feature
+        width: 30%
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+    &_consult-block
+        display: flex
+        justify-content: flex-end
+        margin-top: 60px
+    &_consult
+        width: 300px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        .btn_consult
+            display: block
+            font-weight: 500
+            padding-top: 4px
+            text-align: center
+            font-size: 16px
+            text-transform: uppercase
+            width: 300px
+            height: 50px
+            border: none
+            border-radius: 5px
+            background-color: #E80000
+            color: white
+            cursor: pointer
+        .to_catalog
+            color: white
+            text-decoration: none
+            text-transform: uppercase
+            text-align: right
+.advantages_block
+    background-color: #f6f6f6
+    padding: 50px 0 70px 0
+    h2
+        font-size: 30px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+    .advantages_list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 60px
+        .advantage
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            flex-basis: 26%
+            &_subtitle
+                margin-top: 40px
+                font-weight: 700
+                font-size: 18px
+            &_descr
+                margin-top: 20px
+                font-size: 14px
+.consult_block 
+    background-image: url(../img/bg2.png)
+    background-position: center
+    padding: 100px 0 80px 0
+    h2
+        font-size: 34px
+        color: white
+        text-transform: uppercase
+        width: 70%
+    p
+        font-size: 20px
+        font-weight: 500
+        color: white
+    .consult_form   
+        display: flex
+        flex-direction: column
+        input
+            width: 300px
+            height: 50px
+            border-radius: 5px
+            border: none
+            margin-top: 15px
+        .btn_consult  
+            margin-top: 20px  
+            display: block
+            font-weight: 500
+            padding-top: 4px
+            text-align: center
+            font-size: 16px
+            text-transform: uppercase
+            width: 300px
+            height: 50px
+            border: none
+            border-radius: 5px
+            background-color: #E80000
+            color: white
+            cursor: pointer
+.catalog_block  
+    padding: 120px 0 50px 0
+    position: relative
+    .slider_block
+        position: relative
+    .slider_images, .tns-outer
+        position: relative
+        width: 60%
+        margin: 0 auto
+        img
+            width: 100% 
+        
+    i
+        color: #E80000
+        font-size: 50px
+    button
+        border: none
+        background-color: transparent
+    .prev
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 80px
+    .next
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 60px
+    
+    .catalog
+        margin-top: 100px
+        h2
+            font-size: 30px
+            font-weight: 700
+            text-align: center
+            text-transform: uppercase
+        .catalog_types
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 65px
+            .catalog_link
+                width: 190px
+                text-align: center
+
+                font-size: 18px
+                font-weight: 500
+                text-transform: uppercase
+                color: #6b6b6b
+                border: 2px solid #d0d0d0
+                transform: skewX(-20deg)
+            .catalog_link:hover
+                background-color: #E80000
+                color: white
+                border: none
+                cursor: pointer
+            .catalog_type
+                display: inline-block
+                transform: skewX(20deg) 
+                width: 100%
+                padding: 15px 0 15px 0
+            .catalog_link:not(:last-child)
+                margin-right: 40px
+    .catalog_list
+        margin-top: 65px
+        display: none
+        justify-content: center
+        flex-wrap: wrap
+    .catalog_list.active
+        display: flex
+    .catalog_list.hidden
+        display: none
+    .catalog_list
+        .catalog_card:not(:nth-child(3n+3))
+            margin-right: 20px
+       
+        .catalog_card
+            display: flex
+            flex-direction: column
+            align-items: center
+            height: 440px
+            width: 300px
+            text-align: center
+            padding: 20px
+            border: 2px solid #e8e8e8
+            margin-bottom: 20px
+            .card_title
+                margin-bottom: 20px
+                font-size: 16px
+                font-weight: 700
+            .card_more
+                font-size: 14px
+                font-weight: 500
+                color: #E80000
+                text-transform: uppercase
+            .card_about
+                margin-bottom: 20px
+                font-size: 14px
+            .btn_buy
+                width: 130px
+                height: 40px
+                font-size: 14px
+                text-transform: uppercase
+                text-align: center
+                border: none
+                color: white
+                border-radius: 5px
+                background-color: #E80000
+            .card_price
+                display: flex
+                justify-content: space-between
+                border-top: 1px solid #e8e8e8
+                padding-top: 20px
+                margin-top: 20px
+                .card_prices
+                    display: flex
+                    flex-direction: column
+                    text-align: left
+                    margin-right: 30px
+                    .card_deleted-price
+                        font-size: 14px
+                        font-weight: 300
+                        color: #606060
+                        text-decoration: line-through
+                    .card_current-price
+                        font-size: 20px
+                        font-weight: 700
+
+.reviews_block
+    padding: 50px 0 80px 0
+    h2
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        margin-bottom: 70px
+        text-transform: uppercase
+    .reviews
+        display: flex
+        flex-direction: column
+        width: 84%
+        .review:not(:first-child)
+            margin-top: 90px
+        .review
+            display: flex
+            align-items: flex-start
+            .review_img
+                margin-right: 60px
+            .review_name
+                font-size: 18px
+                font-weight: 700
+            .review_achieve
+                margin-top: 10px
+                font-size: 14px
+                font-weight: 300
+                color: #646464
+            .review_descr
+                margin-top: 20px
+                font-size: 16px
+.map_block
+    background-image: url(../img/map.png)
+    background-repeat: no-repeat
+    background-position: center center
+    height: 630px
+    .map
+        width: 460px
+        height: 270px
+        background-color: #E80000
+        color: white
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 0 auto
+        padding-top: 30px
+        .address
+            font-size: 20px
+            font-weight: 500
+        .number
+            font-size: 20px
+            font-weight: 700
+        .map_social
+            display: flex
+            margin-top: 20px
+            .social_item a
+                color: white
+            .social_item
+                border: 2px solid white
+                width: 55px
+                height: 55px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 30px
+            .social_item:not(:last-child)
+                margin-right: 30px
+@import "media"
