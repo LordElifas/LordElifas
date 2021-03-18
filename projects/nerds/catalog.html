@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Catalog</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top__logo">
+                    <button>
+                        <img src="img/nerds-logo.png" alt="logo">
+                    </button>
+                </div>
+                <ul class="header-top__nav">
+                    <li><a class="header__link" href="#">студия</a></li>
+                    <li><a class="header__link" href="#">клиенты</a></li>
+                    <li><a class="header__link active" href="#">магазин</a></li>
+                    <li><a class="header__link" href="#">контакты</a></li>
+                </ul>
+                <div class="header-top__basket">
+                    <i class="fas fa-shopping-cart"></i><a class="header__link" href="#">корзина</a>
+                </div>
+            </div>
+            <div class="header__title">
+                <h1>Магазин готовых шаблонов</h1>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <div class="container">
+            <aside class="sidebar">
+                <form>
+                    <div class="sidebar-cost">
+                        <p class="subtitle">стоимость:</p>
+                        <div class="sidebar__range"><input id="range" type="range" min="0" max="20 000" step="1" value="15 000"></div>
+                        <p>от <span id="range_from"></span> до <span id="range_to"></span></p>
+                    </div>
+                    <div class="sidebar-grid">
+                        <p class="subtitle">сетка:</p>
+                        <div class="sidebar__radio">
+                            <input name="grid" value="adaptive" id="grid_adaptive" type="radio">
+                            <label for="grid_adaptive"> Адаптивная</label>
+                        </div>
+                        <div class="sidebar__radio">
+                            <input name="grid" value="fix" id="grid_fix" type="radio">
+                            <label for="grid_fix"> Фиксированная</label>
+                        </div>
+                        <div class="sidebar__radio">
+                            <input name="grid" value="flex" id="grid_flex" type="radio">
+                            <label for="grid_flex"> Резиновая</label>
+                        </div>
+                    </div>
+                    <div class="sidebar-features">
+                        <p class="subtitle">особенности:</p>
+                        <div class="sidebar__checkbox">
+                            <input id="features_slider" type="checkbox">
+                            <label for="features_slider"> Слайдер</label>
+                        </div>
+                        <div class="sidebar__checkbox">
+                            <input id="features_advantages" type="checkbox">
+                            <label for="features_advantages"> Блок преимуществ</label>
+                        </div>
+                        <div class="sidebar__checkbox">
+                            <input id="features_news" type="checkbox">
+                            <label for="features_news"> Новости</label>
+                        </div>
+                        <div class="sidebar__checkbox">
+                            <input id="features_galery" type="checkbox">
+                            <label for="features_galery"> Галерея</label>
+                        </div>
+                        <div class="sidebar__checkbox">
+                            <input id="features_basket" type="checkbox">
+                            <label for="features_basket"> Корзина</label>
+                        </div>
+                    </div>
+                    <button class="button sidebar__button button_gray"><span>показать</span></button>
+                </form>
+            </aside>
+            <div class="catalog-block">
+                <div class="catalog-sorting-block">
+                    <p class="subtitle">сортировать:</p>
+                    <div class="sorting-buttons">
+                        <a href="#" class="sort sort__button active">по цене</a>
+                        <a href="#" class="sort sort__button">по типу</a>
+                        <a href="#" class="sort sort__button">по названию</a>
+                        <a href="#" class="sort sort__button__triangle active fas fa-caret-down"></a>
+                        <a href="#" class="sort sort__button__triangle fas fa-caret-up"></a>
+                    </div>
+                </div>
+                <div class="catalog-items">
+                    <div class="catalog__item">
+                        <div class="image_top">
+                            <div class="top-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <img src="img/img-sedona.png" alt="" class="catalog__item__img">
+                        <div class="item_hover">
+                            <div class="item_hover__title">sedona</div>
+                            <div class="item_hover__about">Информационный сайт <br>для туристов</div>
+                            <button class="button item_hover__button button_red"><span>9 900 руб.</span></button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="image_top">
+                            <div class="top-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <img src="img/img-pink.png" alt="" class="catalog__item__img">
+                        <div class="item_hover">
+                            <div class="item_hover__title">pink app</div>
+                            <div class="item_hover__about">Продуктовый лендинг <br>приложения для iOS и Android</div>
+                            <button class="button item_hover__button button_red"><span>9 900 руб.</span></button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="image_top">
+                            <div class="top-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <img src="img/img-barbershop.png" alt="" class="catalog__item__img">
+                        <div class="item_hover">
+                            <div class="item_hover__title">barbershop</div>
+                            <div class="item_hover__about">Сайт салоны красоты.<br> Для мужчин, да.</div>
+                            <button class="button item_hover__button button_red"><span>9 900 руб.</span></button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="image_top">
+                            <div class="top-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <img src="img/img-mishka.png" alt="" class="catalog__item__img">
+                        <div class="item_hover">
+                            <div class="item_hover__title">mishka</div>
+                            <div class="item_hover__about">Интернет-магазин<br> вязаных игрушек</div>
+                            <button class="button item_hover__button button_red"><span>9 900 руб.</span></button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="image_top">
+                            <div class="top-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <img src="img/img-aplus.png" alt="" class="catalog__item__img">
+                        <div class="item_hover">
+                            <div class="item_hover__title">a plus</div>
+                            <div class="item_hover__about">Лендинг курсов повышения <br>квалификации</div>
+                            <button class="button item_hover__button button_red"><span>9 900 руб.</span></button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="image_top">
+                            <div class="top-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <img src="img/img-kvast.png" alt="" class="catalog__item__img">
+                        <div class="item_hover">
+                            <div class="item_hover__title">кваст</div>
+                            <div class="item_hover__about">Промо-сайт производителя <br>крафтового кваса</div>
+                            <button class="button item_hover__button button_red"><span>9 900 руб.</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-buttons">
+                    <div class="catalog__button button button_gray active">1</div>
+                    <div class="catalog__button button button_gray">2</div>
+                    <div class="catalog__button button button_gray">3</div>
+                    <div class="catalog__button button button_gray">Следующая</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="map">
+        <div class="modal">
+            <h2>Напишите нам</h2>
+            <form action="">
+                <div class="modal__inputs">
+                    <div class="modal__name">
+                        <label for="name">
+                            Ваше имя:<br>
+                        </label>
+                        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="modal__email">
+                        <label for="email">
+                            Ваш e-mail:<br>
+                        </label>
+                        <input id="email" type="email" name="email" placeholder="email@example.com">
+                    </div>
+                </div>
+                <div class="modal__textarea">
+                    <label for="textarea">
+                        Текст письма:<br>
+                        <textarea name="textarea" id="textarea" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+                    </label>
+                </div>
+                <button class="button form__button button_red"><span>Отправить</span></button>
+                <button class="modal-close fas fa-times"></button>
+            </form>
+        </div>
+        <div class="map__image">
+            <img src="img/map.png" alt="">
+        </div>
+        <div class="map__callback">
+            <h3>NERDS DESIGN STUDIO</h3>
+            <p class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <span class="phone-number">тел. +7 (812) 275-75-75</span>
+            <button class="button callback__button button_red"><span>напишите нам</span></button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-social">
+                    <div class="footer-social__item"><i class="fab fa-vk"></i></div>
+                    <div class="footer-social__item"><i class="fab fa-facebook-f"></i></div>
+                    <div class="footer-social__item"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="footer-discount">
+                    <h2>Давайте дружить, это выгодно!</h2>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+        
+    
+    <script src="js/form.js"></script>
+</body>
+</html>
