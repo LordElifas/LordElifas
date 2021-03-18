@@ -1,0 +1,428 @@
+* 
+    box-sizing: border-box
+body
+    margin: 0
+    padding: 0
+.container 
+    width: 88%
+    margin: 0 auto
+.button:active span
+    opacity: 0.5
+.button
+    color: white
+    text-transform: uppercase
+    font-size: 16px
+    line-height: 18px
+    border: none
+    height: 50px
+    font-weight: bold
+    outline: none
+    border-radius: 5px
+    cursor: pointer
+    &_red
+        background-color: #fb565a
+    &_red:hover
+        background-color: #e74246
+    &_red:active
+        background-color: #d7373b
+    &_green
+        background-color: #00ca74
+    &_green:hover
+        background-color: #00bc6c
+    &_green:active
+        background-color: #00aa62
+    &_yellow
+        background-color: #efc84a
+    &_yellow:hover
+        background-color: #eab534
+    &_yellow:active
+        background-color: #e5a722
+hr 
+    width: 90%
+    border: 0
+    height: 2px
+    background-color: #eeeeee
+.header
+    padding: 30px 0 0 0
+    background-color: #eeeeee
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin-bottom: 10px
+        &__logo
+            button
+                border: none
+                background: none
+                outline: none
+                cursor: pointer
+                img:active
+                    opacity: 0.5
+        &__nav
+            display: flex
+            margin:  0
+            padding: 0
+            li
+                list-style: none
+            li:not(:last-child)
+                margin-right: 50px
+            li
+                a
+                    text-decoration: none
+                    font-size: 16px
+                    color: black
+                    text-transform: uppercase
+                    font-weight: 500
+                a:visited
+                    border-bottom: 1px solid #fb565a
+                a:hover 
+                    color: #fb565a
+                a:active
+                    color: #a6a6a6
+                a.active
+                    border-bottom: 2px solid #fb565a
+        &__basket
+            display: flex
+            align-items: center
+            i
+                color: #a6a6a6
+            a
+                margin-left: 20px
+                font-size: 16px
+                color: black
+                text-transform: uppercase
+                font-weight: 500
+                text-decoration: none
+            a:visited
+                border-bottom: 1px solid #fb565a
+            a:hover 
+                color: #fb565a
+            a:active
+                color: #a6a6a6
+            a.active
+                border-bottom: 2px solid #fb565a
+    &-main
+        position: relative
+        .slider-wrapper
+            .slide
+                display: none
+                justify-content: space-between
+                align-items: center
+                height: 415px
+            .active
+                display: flex
+            
+        &__text
+            width: 50%
+            h2
+                font-size: 55px
+                font-weight: bold
+                text-align: left
+                margin-bottom: 20px
+            p
+                font-size: 16px
+                line-height: 24px
+        &__image
+            img
+                width: 100%        
+        &__button
+            width: 240px
+            margin-top: 20px
+        .slider-dots
+            position: absolute
+            bottom: 80px
+            left: 46%
+            display: flex
+            justify-content: center
+            .dot.active:after
+                content: ""
+                width: 5px
+                height: 5px
+                border-radius: 50%
+                border: 1px solid black
+                position: absolute
+                top: 33%
+                left: 33%
+                
+            .dot 
+                position: relative
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                background-color: white
+                margin-right: 10px
+                cursor: pointer 
+                border: 1px solid black       
+            .dot:last-child
+                margin-right: 0
+        
+.advantages
+    padding: 80px 0 85px 0
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        &__item
+            width: 300px
+        &__heading
+            font-size: 24px
+            line-height: 30px
+            font-weight: bold
+            text-transform: uppercase
+            margin-top: 30px
+        &__text
+            font-size: 16px
+            line-height: 24px
+            margin-top: 20px
+        &__button
+            width: 160px
+            margin-top: 30px
+.about
+    padding: 40px 0 80px 0
+    &-us
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        &__text
+            flex-basis: 57%
+            h2
+                font-size: 45px
+                line-height: 45px
+            p
+                font-size: 16px
+                line-height: 24px
+            h3
+                font-size: 16px
+                text-transform: uppercase
+                line-height: 24px
+                font-weight: bold
+                margin-top: 30px
+        &__list
+            li
+                list-style: none
+                position: relative
+                margin-top: 25px
+            li:before 
+                content: ""
+                position: absolute
+                left: -32px
+                top: 8px
+                width: 25px
+                height: 2px
+                background-color:#fb565a
+        &__company
+            display: flex
+            flex-direction: column
+            flex-basis: 30%
+            >p
+                font-weight: bold
+                font-size: 16px
+                line-height: 24px
+                text-transform: uppercase
+                margin-left: 10px
+        &__img
+                img
+                    width: 100%
+        &__features
+            display: flex
+            justify-content: space-between
+            margin-top: 50px
+        &__feature
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            p
+                margin: 0
+                padding: 0
+            p:first-of-type
+                font-size: 45px
+                font-weight: bold
+                margin-bottom: 25px
+                sup
+                    font-size: 20px
+            p:last-of-type
+                font-size: 16px
+                line-height: 18px
+.projects
+    padding: 45px 0
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &__item
+        position: relative
+        height: 88px
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 0.4
+        button
+            border: none
+            background: none
+            outline: none
+    &__item:hover
+        opacity: 1
+    &__item:active
+        opacity: 0.2
+    &__line
+       
+        width: 2px
+        height: 40px
+        background-color: #eeeeee
+        
+.map
+    padding: 80px 0
+    position: relative
+    &__image::after
+        content: url(../img/map-marker.png)
+        position: absolute
+        top: 15%
+        left: 56%
+    &__image
+        width: 100%
+        position: relative
+
+        img
+            width: 100%
+            
+    &__callback
+        position: absolute
+        top: 21%
+        left: 6%
+        padding: 20px 45px 45px 45px
+        width: 320px
+        display: flex
+        flex-direction: column
+        background-color: white
+        h3
+            margin-bottom: 10px
+        p, span
+            font-size: 16px
+            line-height: 18px
+        .callback__button
+            margin-top: 45px
+.footer
+    padding-bottom: 50px 
+    &-wrapper
+        display: flex
+        align-items: center
+    &-social
+        display: flex
+        justify-content: center
+        align-items: center
+        &__item
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            background-color: #e1e1e1
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            font-size: 22px
+            margin-right: 15px
+        &__item:hover
+            background-color: #e74246
+        &__item:active 
+            background-color: #e74246
+        &__item:active i
+            opacity: 0.5
+        &__item:last-child
+            margin-right: 0
+    &-discount
+        margin-left: 140px
+        h2
+            font-size: 36px
+            font-weight: bold
+            margin-top: 10px
+            margin-bottom: 0
+        p
+            font-size: 16px
+            line-height: 22px
+
+.modal
+    display: none
+    flex-direction: column
+    align-items: center
+    position: absolute
+    top: 17%
+    left: 50%
+    transform: translateX(-50%)
+    padding: 30px 100px 80px 100px
+    width: 960px
+    height: 590px
+    background-color: white
+    box-shadow: 0 0 20px 10px #696969
+    margin: 0 auto 20px auto
+    z-index: 2
+    h2
+        font-size: 45px
+        align-self: flex-start
+    &-close 
+        position: absolute
+        right: -15px
+        top: -70px
+        color: #fecccd
+        border: none
+        background: none
+        font-size: 30px
+        cursor: pointer
+    form
+        display: flex
+        flex-direction: column
+        width: 100%
+        position: relative
+        label
+            font-size: 16px
+            font-weight: bold
+        input[type="text"]
+            width: 100%
+            height: 50px
+        input[type="email"]
+            width: 100%
+            height: 50px
+        textarea
+            width: 100%
+            color: #d1d1d1
+            padding-top: 10px
+        input, textarea
+            border: 2px solid #d7dcde
+            padding-left: 15px
+            margin-top: 10px
+            outline: none
+
+        ::-moz-placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+        ::-webkit-input-placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+        :-ms-input-placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+        ::placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+   
+        .modal__inputs
+            display: flex
+            justify-content: space-between
+            margin-bottom: 30px
+            .modal__name
+                flex-basis: 48%
+            .modal__email
+                flex-basis: 48%
+            .modal__textarea
+                flex-basis: 100%
+        .form__button
+            width: 260px
+            margin-top: 50px
+          
+.modal.active
+    display: flex
+
+@import 'media_index'
