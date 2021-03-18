@@ -1,0 +1,407 @@
+* 
+    box-sizing: border-box
+body
+    margin: 0
+    padding: 0
+
+
+.container 
+    width: 88%
+    margin: 0 auto
+.button:active span
+    opacity: 0.5
+.button
+    color: white
+    text-transform: uppercase
+    font-size: 16px
+    line-height: 18px
+    border: none
+    height: 50px
+    font-weight: bold
+    cursor: pointer
+    outline: none
+    border-radius: 5px
+
+    &_red
+        background-color: #fb565a
+    &_red:hover
+        background-color: #e74246
+    &_red:active
+        background-color: #d7373b
+    &_gray
+        background-color: #eeeeee
+        color: #000000
+    &_gray:hover
+        background-color: black
+    &_gray:active
+        background-color: #d5d5d5
+        border-top: 2px solid #bfbfbf
+        color: #959595
+
+.header
+    padding: 30px 0 110px 0
+    background-color: #eeeeee
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 10px
+        &__logo
+            button
+                border: none
+                background: none
+                outline: none
+                cursor: pointer
+                img:active
+                    opacity: 0.5
+
+        &__nav
+            display: flex
+            margin:  0
+            padding: 0
+            li
+                list-style: none
+            li:not(:last-child)
+                margin-right: 50px
+            li
+                a
+                    text-decoration: none
+                    font-size: 16px
+                    color: black
+                    text-transform: uppercase
+                    font-weight: 500
+                a:visited
+                    border-bottom: 1px solid #fb565a
+                a:hover 
+                    color: #fb565a
+                a:active
+                    color: #a6a6a6
+                a.active
+                    border-bottom: 2px solid #fb565a
+        &__basket
+            i
+                color: #a6a6a6
+            a
+                margin-left: 20px
+                font-size: 16px
+                color: black
+                text-transform: uppercase
+                font-weight: 500
+                text-decoration: none
+            a:visited
+                border-bottom: 1px solid #fb565a
+            a:hover 
+                color: #fb565a
+            a:active
+                color: #a6a6a6
+            a.active
+                border-bottom: 2px solid #fb565a
+    &__title
+        margin-top: 80px
+        h1
+            font-size: 55px
+            line-height: 55px
+            text-align: center
+.catalog
+    padding: 60px 0
+.catalog .container
+    display: flex
+    .subtitle
+        font-size: 18px
+        line-height: 20px
+        font-weight: bold
+        text-transform: uppercase
+    .sidebar    
+        margin-right: 140px
+        flex-basis: 60%
+        &-cost
+            .subtitle
+                margin-bottom: 60px
+        &__range
+            width: 260px
+            height: 80px
+            background-color: #eeeeee
+            display: flex
+            justify-content: center
+            align-items: center
+                
+        &-grid
+            .subtitle
+                margin-top: 40px
+        &-features
+            .subtitle
+                margin-top: 40px
+        &-grid input, &-features input
+            border
+        &__radio, &__checkbox
+            margin-bottom: 10px
+
+        &__button
+            width: 260px
+            margin-top: 40px
+
+        
+    .catalog-block
+        display: flex
+        flex-direction: column
+        .catalog-sorting-block
+            display: flex
+            justify-content: space-between
+            margin-bottom: 40px
+            .sorting-buttons
+                display: flex
+                align-items: center
+                .sort:last-child
+                    margin-right: 0
+                .sort:hover
+                    color: #666666
+                .sort:active
+                    color: black
+                .sort.active
+                    color: black
+                .sort
+                    text-decoration: none
+                    font-size: 14px
+                    text-transform: uppercase
+                    margin-right: 30px
+                    color: #c9c9c9
+                .fas
+                    font-size: 20px
+        .catalog-items
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            .catalog__item:hover .item_hover
+                display: flex
+            .catalog__item:hover .image_top
+                background-color: #4d4d4d
+                border-bottom: 1px solid #4d4d4d
+            .catalog__item
+                margin-bottom: 30px
+                position: relative
+                .image_top
+                    width: 100%
+                    height: 40px
+                    background-color: #e9e9e9
+                    border-top-left-radius: 5px 
+                    border-top-right-radius: 5px
+                   
+                    .top-dots
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+                        padding: 14px 0 0 15px
+                        .dot
+                            width: 15px
+                            height: 15px
+                            background-color: white
+                            border-radius: 50%
+                            margin-right: 10px
+                        .dot:last-child 
+                            margin-right: 0
+                img
+                    width: 100%
+                    
+                .item_hover
+                    display: none
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    flex-direction: column
+                    align-items: center
+                    padding: 40px 0 45px 0
+                    background-color: #eeeeee
+                    text-align: center
+                    &__title
+                        font-size: 18px
+                        line-height: 30px
+                        font-weight: bold
+                        text-transform: uppercase
+                    &__about
+                        margin-top: 10px
+                        font-size: 16px
+                        color: #666666
+                        line-height: 18px
+                    &__button
+                        margin-top: 30px
+                        width: 200px
+        .catalog-buttons
+            display: flex
+            margin-top: 30px
+            .catalog__button
+                width: 50px
+                height: 50px
+                background-color: #eeeeee
+                font-weight: bold
+                font-size: 16px
+                color: black
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 10px
+            .catalog__button:last-child
+                width: 260px
+                margin-right: 0
+            .catalog__button:hover
+                background-color: #d5d5d5
+            .catalog__button:active
+                background-color: #d5d5d5
+                border-top: 2px solid #bfbfbf
+                color: #959595
+            .catalog__button.active
+                border: 3px solid #dbdbdb
+                background-color: white
+
+
+
+
+.map
+    padding: 80px 0
+    position: relative
+    &__image::after
+        content: url(../img/map-marker.png)
+        position: absolute
+        top: 15%
+        left: 56%
+    &__image
+        width: 100%
+        position: relative
+
+        img
+            width: 100%
+            
+    &__callback
+        position: absolute
+        top: 21%
+        left: 6%
+        padding: 20px 45px 45px 45px
+        width: 320px
+        display: flex
+        flex-direction: column
+        background-color: white
+        h3
+            margin-bottom: 10px
+        p, span
+            font-size: 16px
+            line-height: 18px
+        .callback__button
+            margin-top: 45px
+.footer
+    padding-bottom: 50px 
+    &-wrapper
+        display: flex
+        align-items: center
+    &-social
+        display: flex
+        justify-content: center
+        align-items: center
+        &__item
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            background-color: #e1e1e1
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            font-size: 22px
+            margin-right: 15px
+        &__item:hover
+            background-color: #e74246
+        &__item:active 
+            background-color: #e74246
+        &__item:active i
+            opacity: 0.5
+        &__item:last-child
+            margin-right: 0
+    &-discount
+        margin-left: 140px
+        h2
+            font-size: 36px
+            font-weight: bold
+            margin-top: 10px
+            margin-bottom: 0
+        p
+            font-size: 16px
+            line-height: 22px
+
+.modal
+    display: none
+    flex-direction: column
+    align-items: center
+    position: absolute
+    top: 17%
+    left: 50%
+    transform: translateX(-50%)
+    padding: 30px 100px 80px 100px
+    width: 960px
+    height: 590px
+    background-color: white
+    box-shadow: 0 0 20px 10px #696969
+    margin: 0 auto 20px auto
+    z-index: 2
+    h2
+        font-size: 45px
+        align-self: flex-start
+    &-close 
+        position: absolute
+        right: -15px
+        top: -70px
+        color: #fecccd
+        border: none
+        background: none
+        font-size: 30px
+        cursor: pointer
+    form
+        display: flex
+        flex-direction: column
+        width: 100%
+        position: relative
+        label
+            font-size: 16px
+            font-weight: bold
+        input[type="text"]
+            width: 100%
+            height: 50px
+        input[type="email"]
+            width: 100%
+            height: 50px
+        textarea
+            width: 100%
+            color: #d1d1d1
+            padding-top: 10px
+        input, textarea
+            border: 2px solid #d7dcde
+            padding-left: 15px
+            margin-top: 10px
+            outline: none
+
+        ::-moz-placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+        ::-webkit-input-placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+        :-ms-input-placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+        ::placeholder 
+            color: #c6c6c6
+            font-weight: 16px
+   
+        .modal__inputs
+            display: flex
+            justify-content: space-between
+            margin-bottom: 30px
+            .modal__name
+                flex-basis: 48%
+            .modal__email
+                flex-basis: 48%
+            .modal__textarea
+                flex-basis: 100%
+        .form__button
+            width: 260px
+            margin-top: 50px
+          
+.modal.active
+    display: flex
