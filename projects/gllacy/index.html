@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,12 +62,12 @@
         <main>
             <div class="container">
                 <div class="promotions">
-                    <div class="promotion">
+                    <div class="promotion block">
                         <h3>Малинка даром!</h3>
                         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                         <button class="button promotion__button button_red">Хочу варенье!</button>
                     </div>
-                    <div class="promotion">
+                    <div class="promotion block">
                         <h3>Шоколадки даром!</h3>
                         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшней шоколадной присыпки совершенно бесплатно.</p>
                         <button class="button promotion__button button_red">Хочу шоколадки!</button>
@@ -151,11 +151,11 @@
                     </div>
                 </div>
                 <div class="blog-email-block">
-                    <div class="blog">
+                    <div class="blog block">
                         <p class="blog__title">Новое в нашем блоге</p>
                         <p class="blog__news">10 способов</p>
                     </div>
-                    <div class="email-wrapper">
+                    <div class="email-wrapper block">
                         <div class="email">
                             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                             <form action="">
@@ -166,21 +166,50 @@
                     </div>
                 </div>
             </div>
+            <div class="map">
+                <img src="img/map.png" alt="">
+                <div class="address-block">
+                    <div class="address-block__address">
+                        <p>Адрес главного офиса <br>и офлайн-магазина:<br>
+                        <span class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+                    </div>
+                    <div class="address-block__phone">
+                        <p>Для заказов по телефону:<br>
+                        <span class="tel">8 812 450-25-25</span><br>
+                        (с 10 до 20 ежедневно)</p>
+                    </div>
+                    <div class="button address-block__button button_red">
+                        Форма обратной связи
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer-wrapper">
                     <div class="footer-social">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <div class="footer-social-wrapper">
+                            <a href="#" class="fab fa-twitter"></a>
+                        </div>
+                        <div class="footer-social-wrapper">
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                        <div class="footer-social-wrapper">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                        </div>
+                        <div class="footer-social-wrapper">
+                            <a href="#" class="fab fa-vk"></a>
+                        </div>
                     </div>
-                    <div class="footer-documents">
-                        <a href="#">Для поставщиков</a>
-                        <a href="#">Наши документы</a>
-                        <a href="#">О производстве</a>
-                        <a href="#">Экологические стандарты</a>
+                    <div class="footer-links">
+                        <div class="footer-documents">
+                            <a href="#">Для поставщиков</a>
+                            <a href="#">Наши документы</a>
+                        </div>
+                        <div class="footer-about">
+                            <a href="#">О производстве</a>
+                            <a href="#">Экологические стандарты</a>
+                        </div>
                     </div>
                     <div class="footer-copyright">
                         <img src="img/logo-htmlacademy-small.png" alt="">
