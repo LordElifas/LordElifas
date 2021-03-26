@@ -1,0 +1,81 @@
+*
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+.container
+    width: 84%
+    margin: 0 auto
+.background-1
+    background-image: url(../img/back-1.png)
+.background-2
+    background-image: url(../img/back-2.png)
+.background-3
+    background-image: url(../img/back-3.png)
+.block
+    max-width: 560px
+.button
+    border: none
+    background-color: none
+    outline: none
+    color: white
+    font-weight: bold
+    cursor: pointer
+    &_red
+        background-image: linear-gradient(to bottom, #f16743, #e74b36)
+header
+    padding-top: 10px
+    .header-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        z-index: 7
+        &-block
+            display: flex
+            align-items: center
+        &-links
+            display: flex
+            a
+                text-decoration: none
+                color: white
+                font-weight: bold
+                font-size: 16px
+                margin-left: 30px
+        &-buttons
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-basis: 24%   
+            &__button
+                background-color: rgba(205,205,205, 0.5)
+                font-size: 14px
+                color: white
+                height: 30px
+            .search__button
+                border-radius: 50%
+                width: 30px  
+                font-size: 16px
+            .enter__button
+                border-radius: 20px
+                padding: 5px
+                width: 90px
+                i
+                    margin-right: 5px
+                    font-size: 16px
+            .basket__button
+                border-radius: 20px
+                width: 120px
+                i
+                    margin-right: 5px
+                    font-size: 16px
+        &__schedule
+            color: white
+            position: absolute
+            top: 70px
+            right: 0px
+            text-align: right
+            p:first-child
+                font-size: 14px
+                margin-bottom: 10px
+            p:last-child
+                font-size: 22px
+                margin-top: 0
