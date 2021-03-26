@@ -2,7 +2,7 @@
     box-sizing: border-box
     font-family: 'Roboto', sans-serif
 .container
-    width: 89%
+    width: 84%
     margin: 0 auto
 .background-1
     background-image: url(../img/back-1.png)
@@ -11,13 +11,14 @@
 .background-3
     background-image: url(../img/back-3.png)
 .block
-    width: 560px
+    max-width: 560px
 .button
     border: none
     background-color: none
     outline: none
     color: white
     font-weight: bold
+    cursor: pointer
     &_red
         background-image: linear-gradient(to bottom, #f16743, #e74b36)
 header
@@ -25,7 +26,9 @@ header
     .header-top
         display: flex
         justify-content: space-between
-        align-items: flex-start
+        align-items: center
+        position: relative
+        z-index: 7
         &-block
             display: flex
             align-items: center
@@ -37,28 +40,88 @@ header
                 font-weight: bold
                 font-size: 16px
                 margin-left: 30px
-        &-nav
+        &-buttons
             display: flex
-            flex-direction: column
-            
-            &-buttons
+            align-items: center
+            justify-content: space-between
+            flex-basis: 24%   
             &__button
                 background-color: rgba(205,205,205, 0.5)
                 font-size: 14px
                 color: white
-            &__schedule
-                color: white
-                p:first-child
-                    font-size: 14px
-                p:last-child
-                    font-size: 22px
+                height: 30px
+            .search__button
+                border-radius: 50%
+                width: 30px  
+                font-size: 16px
+            .enter__button
+                border-radius: 20px
+                padding: 5px
+                width: 90px
+                i
+                    margin-right: 5px
+                    font-size: 16px
+            .basket__button
+                border-radius: 20px
+                width: 120px
+                i
+                    margin-right: 5px
+                    font-size: 16px
+        &__schedule
+            color: white
+            position: absolute
+            top: 70px
+            right: 0px
+            text-align: right
+            p:first-child
+                font-size: 14px
+                margin-bottom: 10px
+            p:last-child
+                font-size: 22px
+                margin-top: 0
     .slider
         padding-bottom: 40px
+        min-height: 560px
+        position: relative
         .slide
             display: none
-            width: 56%
+            width: 62%
             margin: 0 auto
             text-align: center
+            position: relative
+            &__about
+                z-index: 2
+                position: relative
+                bottom: -280px
+                h2
+                    margin-bottom: 0
+                button
+                    margin-top: 30px
+            &__images   
+                position: relative
+                z-index: 1
+                
+            &__image-1
+                position: absolute
+                top: 0
+                right: 15%
+                
+                transform: translate(-50%, -45%)
+                z-index: 3
+            &__image-2
+                position: absolute
+                top: 0
+                left: 55%
+                transform: translate(-10%, -43%)
+                z-index: 2
+            &__back
+                position: absolute
+                top: 0
+                right: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: 1
+            
         .active
             display: block
             h2
@@ -70,22 +133,45 @@ header
                 height: 65px
                 font-size: 32px
                 border-radius: 30px
+        .slider-dots
+            display: flex
+            justify-content: space-between
+            position: absolute
+            bottom: 60px
+            left: 30px
+            width: 8%
+            .dot
+                width: 25px
+                height: 25px
+                border: 2px solid white
+                background-color: transparent
+                border-radius: 50%
+                
+            .dot-active
+                background-color: white
                
 main    
     .promotions
         display: flex
         justify-content: space-between
+        margin-top: 30px
         .promotion:first-child
-            background: url(../img/raspberry-back.png) no-repeat
+            background-image: url(../img/raspberry-back.png) 
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
             border-radius: 20px
         .promotion:last-child
-            background: url(../img/choco-back.png) no-repeat
+            background-image: url(../img/choco-back.png)
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
             border-radius: 20px
         .promotion
             display: flex
             flex-direction: column
             min-height: 230px
-            flex-basis: 45%
+            flex-basis: 48%
             padding: 20px 20px 0px 20px
             
             h3
@@ -108,22 +194,27 @@ main
     .products
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         padding-top: 40px
         color: white
         .product
-            flex-basis: 20%
+            flex-basis: 23%
             position: relative
             &__image
                 position: relative
+                width: 100%
+                img 
+                    width: 100%
             &__image:before 
                 content: ""
                 background: url(../img/hit.png) no-repeat
                 position: absolute
+                left: 10%
                 width: 60px
                 height: 60px
             &__price
                 position: absolute
-                bottom: 28%
+                bottom: 8%
             &__cost
                 font-size: 45px
                 font-weight: bold
@@ -135,11 +226,14 @@ main
                 font-size: 18px
                 text-align: center
     .about-us
-        background: url(../img/waffles-back.png) no-repeat
+        background-image: url(../img/waffles-back.png) 
+        background-repeat: no-repeat
+        background-size: 100% 100%
+        background-position: center center
         padding: 20px
         min-height: 310px
-        margin: 30px auto 0 auto
-        max-width: 1146px
+        border-radius: 20px
+        width: 100%
         &__title
             font-size: 24px
             margin-bottom: 10px
@@ -160,19 +254,17 @@ main
         display: flex
         justify-content: space-between
         margin-top: 30px
-        .blog 
-
-            
-            border-radius: 20px
         .blog
             background-image: url(../img/strawberry-back.png)
             background-repeat: no-repeat
+            background-size: cover
             background-position: center center
             display: flex
             flex-direction: column
             padding: 10px 20px 0px 20px
             min-height: 220px
-
+            border-radius: 20px
+            width: 48%
             &__title
                 font-size: 16px
                 margin-bottom: 10px
@@ -184,39 +276,38 @@ main
                 margin-top: 0
                 width: 60%
       
-        .email-wrapper 
-            width: 560px
+        .email
             display: flex
-            justify-content: center
-            align-items: center
-            padding-right: 11px
+            flex-direction: column
+            padding: 15px 10px 20px 20px
             min-height: 220px
-            background: url(../img/email-border.png) no-repeat
-            border-radius: 20px 
-            .email 
-                min-height: 210px
-                width: 97%
-                position: relative
-                padding: 15px 10px 20px 20px
+            background-image: url(../img/email-back.png)
+            background-repeat: no-repeat
+            background-size: 100% 100%
+            background-position: center center
+            width: 48%
+            border-radius: 20px
+            
+            p
+                font-size: 16px
+                color: #5a5a5a
+                line-height: 22px
+                margin-bottom: 30px
+            form
+                display: flex
+                justify-content: space-between
+            input 
+                width: 70%
+                height: 45px
+                border: 1px solid #5a5a5a
+                padding-left: 10px
+            &__button
+                height: 45px
+                width: 28%
                 border-radius: 20px
-                background: url(../img/email-back.png) no-repeat
-                p
-                    font-size: 16px
-                    color: #5a5a5a
-                    line-height: 22px
-                    margin-bottom: 30px
-                input 
-                    width: 70%
-                    height: 45px
-                    border: 1px solid #5a5a5a
-                    padding-left: 10px
-                &__button
-                    height: 45px
-                    width: 130px
-                    border-radius: 20px
-                    font-size: 18px
-                    font-weight: bold
-                    margin-left: 10px
+                font-size: 18px
+                font-weight: bold
+
     .map
         min-height: 430px
         margin-top: 30px
@@ -296,7 +387,7 @@ main
             font-size: 12px
             color: white
 
-
+@import 'media'
         
             
 

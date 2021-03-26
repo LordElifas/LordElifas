@@ -26,35 +26,54 @@
                             <a href="#">О Компании</a>
                         </div>
                     </div>
-                    <div class="header-top-nav">
-                        <div class="header-top-nav-buttons">
-                            <button class="button header-top-nav__button search__button"></button>
-                            <button class="button header-top-nav__button enter__button">Вход</button>
-                            <button class="button header-top-nav__button basket__button">Пусто</button>
-                        </div>
-                        <div class="header-top-nav__schedule">
-                            <p>С 10 до 20, ежедневно</p>
-                            <p>8 812 450-25-25</p>
-                        </div>
+                    <div class="header-top-buttons">
+                        <button class="button header-top-buttons__button search__button"><i class="fas fa-search"></i></button>
+                        <button class="button header-top-buttons__button enter__button"><i class="fas fa-sign-in-alt"></i> Вход</button>
+                        <button class="button header-top-buttons__button basket__button"><i class="fas fa-shopping-cart"></i> Пусто</button>
+                    </div>
+                    <div class="header-top__schedule">
+                        <p>С 10 до 20, ежедневно</p>
+                        <p>8 812 450-25-25</p>
                     </div>
                 </div>
                 <div class="slider">
                     <div class="slide active">
-                        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-                        <button class="button slide__button button_red">Давайте оба!</button>
+                        <div class="slide__about">
+                            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+                            <button class="button slide__button button_red">Давайте оба!</button>
+                        </div>
+                        <div class="slide__images">
+                            <img class="slide__image-1" src="img/ice-cream11.png" alt="">
+                            <img class="slide__image-2" src="img/ice-cream12.png" alt="">
+                            <img src="img/backlight.png" alt="" class="slide__back">
+                        </div>
                     </div>
                     <div class="slide">
-                        <h2>Шоколадный пломбир и лимонный сорбет</h2>
-                        <button class="button slide__button button_red">Давайте оба!</button>
+                        <div class="slide__about">
+                            <h2>Шоколадный пломбир и лимонный сорбет</h2>
+                            <button class="button slide__button button_red">Давайте оба!</button>
+                        </div>
+                        <div class="slide__images">
+                            <img class="slide__image-1" src="img/ice-cream21.png" alt="">
+                            <img class="slide__image-2" src="img/ice-cream22.png" alt="">
+                            <img src="img/backlight2.png" alt="" class="slide__back">
+                        </div>
                     </div>
                     <div class="slide">
-                        <h2>Пломбир с помадкой и клубничный щербет</h2>
-                        <button class="button slide__button button_red">Давайте оба!</button>
+                        <div class="slide__about">
+                            <h2>Пломбир с помадкой и клубничный щербет</h2>
+                            <button class="button slide__button button_red">Давайте оба!</button>
+                        </div>
+                        <div class="slide__images">
+                            <img class="slide__image-1" src="img/ice-cream31.png" alt="">
+                            <img class="slide__image-2" src="img/ice-cream32.png" alt="">
+                            <img src="img/backlight3.png" alt="" class="slide__back">
+                        </div>
                     </div>
                     <div class="slider-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                        <button class="button dot dot-active"></button>
+                        <button class="button dot"></button>
+                        <button class="button dot"></button>
                     </div>
                 </div>
             </div>
@@ -77,37 +96,41 @@
                     <div class="product">
                         <div class="product__image">
                             <img src="img/cream1.png" alt="">
+                            <div class="product__price">
+                                <span class="product__cost">310₽</span><span class="product__weight">/кг</span>
+                            </div>
                         </div>
-                        <div class="product__price">
-                            <span class="product__cost">310₽</span><span class="product__weight">/кг</span>
-                        </div>
+                        
                         <p class="product__descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                     </div>
                     <div class="product">
                         <div class="product__image">
                             <img src="img/cream2.png" alt="">
+                            <div class="product__price">
+                                <span class="product__cost">380₽</span><span class="product__weight">/кг</span>
+                            </div>
                         </div>
-                        <div class="product__price">
-                            <span class="product__cost">380₽</span><span class="product__weight">/кг</span>
-                        </div>
+                        
                         <p class="product__descr">Сливочно-кофейное с кусочками шоколада</p>
                     </div>
                     <div class="product">
                         <div class="product__image">
                             <img src="img/cream3.png" alt="">
+                            <div class="product__price">
+                                <span class="product__cost">355₽</span><span class="product__weight">/кг</span>
+                            </div>
                         </div>
-                        <div class="product__price">
-                            <span class="product__cost">355₽</span><span class="product__weight">/кг</span>
-                        </div>
+                        
                         <p class="product__descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
                     </div>
                     <div class="product">
                         <div class="product__image">
                             <img src="img/cream4.png" alt="">
+                            <div class="product__price">
+                                <span class="product__cost">415₽</span><span class="product__weight">/кг</span>
+                            </div>
                         </div>
-                        <div class="product__price">
-                            <span class="product__cost">415₽</span><span class="product__weight">/кг</span>
-                        </div>
+                        
                         <p class="product__descr">Сливочное Крем-брюле с карамельной подливкой</p>
                     </div>
                 </div>
@@ -153,16 +176,14 @@
                 <div class="blog-email-block">
                     <div class="blog block">
                         <p class="blog__title">Новое в нашем блоге</p>
-                        <p class="blog__news">10 способов</p>
+                        <p class="blog__news">10 способов сервировки фруктовых щербетов к столу</p>
                     </div>
-                    <div class="email-wrapper block">
-                        <div class="email">
-                            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                            <form action="">
-                                <input type="email" placeholder="Электронная почта">
-                                <button class="button email__button button_red">Отправить</button>
-                            </form>
-                        </div>
+                    <div class="email block">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                        <form action="">
+                            <input type="email" placeholder="Электронная почта">
+                            <button class="button email__button button_red">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
