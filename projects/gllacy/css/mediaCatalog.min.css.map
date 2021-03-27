@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK,EACpB,AAAA,cAAc,AAAC,CACX,KAAK,CAAE,IAAI,CAAG",
+    "sources": [
+        "../sass/mediaCatalog.sass"
+    ],
+    "names": [],
+    "file": "mediaCatalog.min.css"
+}
