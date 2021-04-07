@@ -1,4 +1,36 @@
 @font-face {
   font-family: "Cormorant";
-  src: url(/projects/fashion/assets/img/);
+  src: url(/projects/fashion/src/assets/fonts/Cormorant/Cormorant-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cormorant Semibold";
+  src: url(/projects/fashion/src/assets/fonts/Cormorant/Cormorant-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Cormorant Bold";
+  src: url(/projects/fashion/src/assets/fonts/Cormorant/Cormorant-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(/projects/fashion/src/assets/fonts/Cormorant/Raleway-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Raleway Semibold";
+  src: url(/projects/fashion/src/assets/fonts/Cormorant/Raleway-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway Bold";
+  src: url(/projects/fashion/src/assets/fonts/Cormorant/Raleway-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
 }

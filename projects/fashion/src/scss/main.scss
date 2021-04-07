@@ -1,5 +1,13 @@
+@import url(/projects/fashion/src/css/fonts.min.css);
+/* @import url(/projects/fashion/src/css/variables.min.css); */
 * {
     box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    width: 100%;
 }
 .container {
     max-width: 1170px;
@@ -19,16 +27,7 @@ a {
 }
 .header {
     padding: 35px 0 20px 0;
-    a {
-        margin-right: 60px;
-        font-size: 14px;
-        color: #000;
-        letter-spacing: 10%;
-        line-height: 150%;
-    }
-    a:last-child {
-        margin-right: 0;
-    }
+    
 }
 .header-nav {
     display: flex;
@@ -39,12 +38,34 @@ a {
     &_right, &_left {
         display: flex;
         align-items: center;
+        a {
+            margin-right: 60px;
+            font-size: 14px;
+            color: #000;
+            letter-spacing: 10%;
+            line-height: 150%;
+        }
+        a:last-child {
+            margin-right: 0;
+        }
         
     }
 }
 .page-tree {
     a {
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+        position: relative;
+        margin-right: 20px;
+        color: #000;
+    }
+    a:last-child:before {
+        content: "/";
+        position: absolute;
+        left: -17px;
+
     }
 }
 .main-about {
@@ -62,7 +83,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px 215px;
+        width: 1170px;
         h1 {
             font-size: 60px;
             color: #fff;
@@ -72,6 +93,7 @@ a {
             margin-top: 0;
             letter-spacing: 6%;
             margin-bottom: 30px;
+            font-family: 'Cormorant', serif;
         }
     }
     &__author {
@@ -80,7 +102,7 @@ a {
         color: #fff;
         line-height: 150%;
         .author__job {
-            font-weight: bold;
+            font-weight: 600;
         }
     }
     &__author:first-child {
@@ -93,6 +115,7 @@ a {
         font-size: 25px;
         font-weight: bold;
         line-height: 150%;
+        font-family: 'Cormorant', serif;
     }
     &__quote {
         min-height: 211px;
@@ -111,6 +134,7 @@ a {
             margin-top: 0;
             margin-bottom: 5px;
             white-space: pre;
+            font-family: 'Cormorant', serif;
         }
         cite {
             font-style: normal;
@@ -121,6 +145,7 @@ a {
     &__quote + p {
         font-weight: bold;
         font-size: 25px;
+        font-family: 'Cormorant', serif;
     }
 }
 .separator {
@@ -129,22 +154,49 @@ a {
     margin: 30px 0;
 }
 .blog__item {
+    position: relative;
+    .promo__descr:before, .promo__tag:after {
+        content: "";
+        position: absolute;
+        background-color: #E9D6C7;
+        width: 41.5px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+    .promo__descr:before {
+        top: -18px;
+    }
+    .promo__tag:after {
+        bottom: -18px;
+    }
     .promo {
+        position: absolute;
+        left: -233px;
         width: 187px;
         height: 233px;
         background-color: #000;
+        color: #fff;
+        padding: 23px 15px;
         &__descr {
             font-weight: bold;
             font-size: 18px;
             line-height: 150%;
             text-align: center;
             letter-spacing: 0.06em;
+            font-family: 'Cormorant', serif;
+            position: relative;
         }
         &__tag {
             font-size: 16px;
             line-height: 150%;
             text-align: center;
             letter-spacing: 0.06em;
+            position: relative;
         }
     }
     p {
@@ -152,14 +204,19 @@ a {
     }
     figure {
         margin-left: 0;
-    }
-    figcaption {
-        font-size: 16px;
-        line-height: 150%;
-        opacity: 0.3;
+        img {
+            max-width: 270px;
+            max-height: 334px;
+        }
+        figcaption {
+            font-size: 16px;
+            line-height: 150%;
+            opacity: 0.3;
+        }
     }
     h3 {
         font-size: 25px;
+        font-family: 'Cormorant', serif;
     }
     &-descr {
         p {
@@ -170,6 +227,10 @@ a {
             color: #760801;
             text-decoration: underline;
             text-transform: none;
+        }
+        span {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
         }
     }
 }
@@ -188,6 +249,7 @@ a {
                 line-height: 170%;
                 text-transform: uppercase;
                 letter-spacing: 0.06em;
+                font-family: 'Cormorant', serif;
             }
             a {
                 color: #fff;
@@ -197,6 +259,14 @@ a {
             a, p {
                 font-size: 16px;
                 line-height: 24px;
+            }
+            p {
+                display: flex;
+                align-items: center;
+            }
+            i {
+                margin-right: 10px;
+                font-size: 20px;
             }
             
         }
@@ -383,6 +453,13 @@ footer {
         .footer-social {
             display: flex;
             align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            padding: 10px 20px;
             .insta {
                 margin-right: 15px;
             }

@@ -1,5 +1,11 @@
+@import url(/projects/fashion/src/scss/fonts.scss);
+@import url(/projects/fashion/src/scss/variables.scss);
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -79,6 +85,7 @@ a {
   margin-top: 0;
   letter-spacing: 6%;
   margin-bottom: 30px;
+  font-family: "Cormorant", serif;
 }
 .main-about__author {
   margin: 0;
@@ -100,6 +107,7 @@ a {
   font-size: 25px;
   font-weight: bold;
   line-height: 150%;
+  font-family: "Cormorant-Bold", serif;
 }
 .main-block__quote {
   min-height: 211px;
@@ -119,6 +127,7 @@ a {
   margin-top: 0;
   margin-bottom: 5px;
   white-space: pre;
+  font-family: "Cormorant-Bold", serif;
 }
 .main-block__quote cite {
   font-style: normal;
@@ -127,6 +136,7 @@ a {
 .main-block__quote + p {
   font-weight: bold;
   font-size: 25px;
+  font-family: "Cormorant-Bold", serif;
 }
 
 .separator {
@@ -166,6 +176,7 @@ a {
 }
 .blog__item h3 {
   font-size: 25px;
+  font-family: "Cormorant-Bold", serif;
 }
 .blog__item-descr p {
   line-height: 27px;
@@ -175,6 +186,9 @@ a {
   color: #760801;
   text-decoration: underline;
   text-transform: none;
+}
+.blog__item-descr span {
+  font-family: "Raleway-SemiBold", sans-serif;
 }
 
 .link-block {
