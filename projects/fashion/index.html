@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="src/scss/dist/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-nav">
                 <div class="header-nav_left">
@@ -22,7 +24,7 @@
                 <div class="header-nav_right">
                     <a href="#">путешествия</a>
                     <a href="#">магазин</a>
-                    <a class="" href="#"></a>
+                    <a class="" href="#"><img class="insta" src="assets/img/instagram.svg" alt=""></a>
                 </div>
             </div>
             <div class="page-tree">
@@ -37,10 +39,10 @@
                 <div class="main-about__title">
                     <h1>на кого стоит равняться по стилю</h1>
                     <p class="main-about__author">
-                        <span class="author__job">Текст: </span><span class="author__name">Дарья Петракова</span>
+                        <span class="author__job">Текст</span><span class="author__name">: Дарья Петракова</span>
                     </p>
                     <p class="main-about__author">
-                        <span class="author__job">Редактор: </span><span class="author__name">Борис Месняковский</span>
+                        <span class="author__job">Редактор</span><span class="author__name">: Борис Месняковский</span>
                     </p>
                 </div>
             </div>
@@ -49,12 +51,12 @@
             <div class="wrapper">
                 <p class="main-block__descr">
                     В поисках вдохновения в стиле онлайн легко упасть в черную дыру Инста-ада. Когда вы наконец отрываете взгляд от телефона, вы понимаете, 
-                    что потратили два целых дня на прокрутку каналов - и вы все еще в своем халате, не зная, что надеть (мы все были там). Какой тип побеждает суть.
+                    что потратили два целых дня на прокрутку каналов - и вы все еще в своем халате, не зная, что надеть (мы все были там). Какой тип побеждает суть.<br><br>
                     Ну, не бойтесь, мы сделали тяжелый поиск для вас. От наших любимых британских влиятельных лиц до лучших посланий из Милана и самых крутых ньюйоркцев, 
                     читайте наше полное руководство по лучшим блогам о моде (и, что более важно, где купить их образы).
                 </p>
                 <div class="main-block__quote">
-                    <blockquote>“ мода проходит, стиль остаётся. “</blockquote>
+                    <blockquote>“   мода проходит, стиль остаётся.   “</blockquote>
                     <cite>Коко шанель (1883 - 1971)</cite>
                 </div>
                 <p>Итак, поехали!</p>
@@ -68,7 +70,7 @@
                             Тришна Гоклани
                         </h3>
                         <p>
-                            <strong>Кто?</strong> Тришна Гоклани, редактор социальных сетей для Paradise Row днем, британское влияние ночью.
+                            <strong>Кто?</strong> Тришна Гоклани, редактор социальных сетей для <a href="#">Paradise Row</a> днем, британское влияние ночью.
                         </p>
                         <p>
                             <strong>Почему:</strong> стиль Тришны сдержан, вечен и просто классен. 
@@ -76,7 +78,12 @@
                         </p>
                     </div>
                 </div>
+                <hr class="separator">
                 <div class="blog__item">
+                    <div class="promo">
+                        <p class="promo__descr">РЕДАКТИРУЙТЕ СВОИ ФОТО ФИЛЬТРАМИ ОТ PRESETS</p>
+                        <p class="promo__tag">#FASHIONISTA</p>
+                    </div>
                     <figure class="">
                         <p><img src="assets/img/Crissy.jpg" alt=""></p>
                         <figcaption>Фото из инстаграмм Криси Форд</figcaption>
@@ -112,6 +119,7 @@
                         </p>
                     </div>
                 </div>
+                <hr class="separator">
                 <div class="blog__item">
                     <figure class="">
                         <p><img src="assets/img/Lindsey.jpg" alt=""></p>
@@ -132,18 +140,26 @@
                             такие как блестящая сумка <a href="#">Рэйчел By Far</a> и обязательные мулы <a href="#">Wandler</a>.
                         </p>
                     </div>
+                    <!-- <button class="btnHide">hide</button>
+                    <button class="btnShow">show</button>
+                    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel harum qui consequuntur minima assumenda perspiciatis itaque minus molestias necessitatibus soluta! Quae ducimus fugit aliquid molestiae, harum inventore eaque sint asperiores.</div> -->
+                  
                 </div>
             </div>
-            <div class="video-link-block">
-                <div class="video-link-block__descr">
-                    <h3>
-                        модные вещи на каждый день
-                    </h3>
-                    <a href="#">Смотреть видео</a>
-                    <p>10 000 пользователей уже подписались</p>
-                </div>
-                <div class="video-link-block__img">
-                    <img src="assets/img/wear.jpg" alt="">
+            <div class="link-block">
+                <div class="container">
+                    <div class="video-link-block">
+                        <div class="video-link-block__descr">
+                            <h3>
+                                модные вещи<br> на каждый день
+                            </h3>
+                            <a href="#">Смотреть видео</a>
+                            <p><i class="fas fa-play-circle"></i> 10 000 пользователей уже подписались</p>
+                        </div>
+                        <div class="video-link-block__img">
+                            <img src="assets/img/wear.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="wrapper">
@@ -165,6 +181,7 @@
                         </p>
                     </div>
                 </div>
+                <hr class="separator">
                 <div class="blog__item">
                     <figure class="">
                         <p><img src="assets/img/Sabina.jpg" alt=""></p>
@@ -183,39 +200,41 @@
                     </div>
                 </div>
             </div>
-            <div class="cell">
-                <div class="container">
+            <div class="container">
+                <div class="cell">
                     <div class="cell-block">
-                        <div class="cell__title">21 рас продажа, которая заставит вас ждать сезона купальников</div>
+                        <div class="cell__title"><strong>21</strong> распродажа, которая заставит вас ждать сезона купальников</div>
                         <button class="button cell__button">Смотреть распродажу</button>
                     </div>
                 </div>
             </div>
+            <hr class="social-line">
             <div class="social-block">
-                <div class="social-block__item">прикрепить сообщение</div>
-                <div class="social-block__item">поделиться постом</div>
+                <div class="social-block__item"><i class="fab fa-pinterest-p"></i> <span>прикрепить сообщение</span></div>
+                <div class="social-block__item"><i class="fab fa-vk"></i> <i class="fab fa-facebook-f"></i> <span>поделиться постом</span></div>
             </div>
-            <div class="articles-block">
-                <div class="container">
-                    <article>
+            <hr class="article-line">
+            <div class="container">
+                <div class="articles-block">
+                    <article class="article">
                         <div class="article__img">
-                            <img src="" alt="">
+                            <img src="assets/img/article1.jpg" alt="">
                         </div>
                         <p class="article__descr">
-                            самый летний слитный купальник менее чем за 100 долларов
+                            самый летний слитный купальник менее, чем за 100 долларов
                         </p>
                     </article>
-                    <article>
+                    <article class="article">
                         <div class="article__img">
-                            <img src="" alt="">
+                            <img src="assets/img/article2.jpg" alt="">
                         </div>
                         <p class="article__descr">
                             5 маленьких предметов роскоши, которые имеют большое значение
                         </p>
                     </article>
-                    <article>
+                    <article class="article">
                         <div class="article__img">
-                            <img src="" alt="">
+                            <img src="assets/img/article3.jpg" alt="">
                         </div>
                         <p class="article__descr">
                             тенденции 3 штанов, чтобы попробовать этот сезон
@@ -225,20 +244,24 @@
             </div>
         </section>
     </main>
+    <hr class="footer-line">
     <footer>
         <div class="container">
-            <div class="footer-blog">
-                <div class="footer__logo">
-                    <img src="" alt="">
+            <div class="footer-block">
+                <div class="footer-blog">
+                    <div class="footer__logo">
+                        <img src="assets/img/footer-logo.svg" alt="">
+                    </div>
+                    <div class="footer__copyright">
+                        Блог про моду, путешествия и семью. Все права защищены.
+                    </div>
                 </div>
-                <div class="footer__copyright">
-                    Блог про моду, путешествия и семью. Все права защищены.
+                <div class="footer-social">
+                    <img class="insta" src="assets/img/instagram.svg" alt=""> Подписаться
                 </div>
-            </div>
-            <div class="footer-social">
-                Подписаться
             </div>
         </div>
     </footer>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
