@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    background: url(../assets/img/background-1.jpg) center center no-repeat;
+}
+.catalog-block {
+    display: flex;
+    flex-wrap: wrap;
+    &__service {
+        flex-basis: 25%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        img {
+            width: 100%;
+        }
+    }
+    .service-1 {
+        max-height: 365px;
+    }
+}
