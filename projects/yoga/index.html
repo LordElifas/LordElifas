@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/css/main.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-top">
                 <div class="header-top__logo">
@@ -45,13 +46,347 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <section class="yoga-ways-block">
+            <div class="container">
+                <div class="subtitle">
+                    Направления
+                </div>
+                <div class="yoga-ways">
+                    <div class="yoga-way">
+                        <div class="yoga-way__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="yoga-way__title">
+                            Хатха йога
+                        </div>
+                        <div class="yoga-way__schedule">
+                            Пн, Ср, Пт – с 10:00 до 12:00 <br>
+                            Вт, Чт – с 19:00 до 21:00 
+                        </div>
+                        <div class="yoga-way__bottom">
+                            <div class="yoga-way__instructor">
+                                Инструктор<br>
+                                Понкратова Анастасия
+                            </div>
+                            <button class="btn yoga-way__submit"></button>
+                        </div>
+                    </div>
+                    <div class="yoga-way">
+                        <div class="yoga-way__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="yoga-way__title">
+                            Ашатанга йога
+                        </div>
+                        <div class="yoga-way__schedule">
+                            Пн, Ср – с 12:00 до 14:00 <br>
+                            Чт – с 15:00 до 17:00 
+                        </div>
+                        <div class="yoga-way__bottom">
+                            <div class="yoga-way__instructor">
+                                Инструктор<br>
+                                Емельянова Полина
+                            </div>
+                            <button class="btn yoga-way__submit"></button>
+                        </div>
+                    </div>
+                    <div class="yoga-way">
+                        <div class="yoga-way__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="yoga-way__title">
+                            Бикрам йога
+                        </div>
+                        <div class="yoga-way__schedule">
+                            Пт – с 16:00 до 18:00 <br>
+                            Вт – с 15:00 до 17:00 
+                        </div>
+                        <div class="yoga-way__bottom">
+                            <div class="yoga-way__instructor">
+                                Инструктор<br>
+                                Емельянова Полина
+                            </div>
+                            <button class="btn yoga-way__submit"></button>
+                        </div>
+                    </div>
+                    <div class="yoga-way">
+                        <div class="yoga-way__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="yoga-way__title">
+                            Кундалини йога
+                        </div>
+                        <div class="yoga-way__schedule">
+                            Пн, Ср, Пт – с 09:00 до 10:30 <br>
+                            Вт, Чт – с 08:30 до 10:00 
+                        </div>
+                        <div class="yoga-way__bottom">
+                            <div class="yoga-way__instructor">
+                                Инструктор<br>
+                                Попов Серёжа
+                            </div>
+                            <button class="btn yoga-way__submit"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscriptions">
+            <div class="container">
+                <div class="subtitle">
+                    Абонементы
+                </div>
+                <div class="subscriptions-months">
+                    <div class="subcription-month">
+                        <a href="#">1 месяц</a>
+                    </div>
+                    <div class="subcription-month">
+                        <a href="#">6 месяцев</a>
+                    </div>
+                    <div class="subcription-month">
+                        <a href="#">12 месяцев</a>
+                    </div>
+                </div>
+                <div class="subscription-choose">
+                    <div class="subscription-type">
+                        <div class="subscription-type__name">
+                            Утро
+                        </div>
+                        <div class="subscription-type__schedule">
+                            Посещение <br>
+                            с 08:00 до 16:00
+                        </div>
+                        <div class="subscription-type__price">
+                            1 300 Р
+                        </div>
+                        <button class="btn subscription-type__subscribe">
+                            Заказать абонемент
+                        </button>
+                    </div>
+                    <div class="subscription-type">
+                        <div class="subscription-type__name">
+                            Безлимит
+                        </div>
+                        <div class="subscription-type__schedule">
+                            Посещение не ограничено<br> по времени
+                        </div>
+                        <div class="subscription-type__price">
+                            2 800 Р
+                        </div>
+                        <button class="btn subscription-type__subscribe">
+                            Заказать абонемент
+                        </button>
+                    </div>
+                    <div class="subscription-type">
+                        <div class="subscription-type__name">
+                            Вечер
+                        </div>
+                        <div class="subscription-type__schedule">
+                            Посещение<br> с 17:00 до 21:00
+                        </div>
+                        <div class="subscription-type__price">
+                            2 000 Р
+                        </div>
+                        <button class="btn subscription-type__subscribe">
+                            Заказать абонемент
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="subtitle">
+                    Наша команда
+                </div>
+                <div class="team-card">
+                    <div class="team-card__img">
+                        <img src="src/assets/img/team-1.jpg" alt="">
+                    </div>
+                    <div class="team-card__text">
+                        <div class="team-card__header">
+                            <div class="team-card__name">
+                                Серёжа Попов
+                            </div>
+                            <div class="team-card__exp">
+                                Опыт преподавания:
+                            </div>
+                        </div>
+                        <div class="team-card__descr">
+                            Образование и опыт работы: Практикует с 2011 года, является сертифицированным 
+                            инструктором по Кундалини-йоге. Большой опыт преподавания йоги для начинающих
+                            и продолжающих.
+                            <br><br>
+                            Обучался в Индии (International Association of Yoga: classical yoga, 
+                            master of principles yoga therapy), Непале (опыт медитативных
+                            и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога 
+                            центр 108 А. Константинова), Московский центр классической 
+                            йоги Виктора Бойко.
+                            <br><br>
+                            Сертифицированный инструктор по фитнесу и йоге (БГУФК), 
+                            по массажу (Оздоровительный Витал – центр №401).
+                        </div>
+                    </div>
+                </div>
+                <div class="team-slider">
+                    <div class="team-card__buttons">
+                        <button class="btn btn-card-prev"></button>
+                        <div class="team-card__number">
+                            <span class="card-number_first">1</span>/<span class="card-number_last">3</span>
+                        </div>
+                        <button class="btn btn-card-next"></button>
+                    </div>
+                    <div class="team-slider__images">
+                        <img src="src/assets/img/team-11.jpg" alt="">
+                        <img src="src/assets/img/team-2.jpg" alt="">
+                        <img src="src/assets/img/team-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="subtitle">
+                    Галерея
+                </div>
+                <div class="gallery-block">
+                    <img src="src/assets/img/galery-1.jpg" alt="">
+                    <img src="src/assets/img/galery-2.jpg" alt="">
+                    <img src="src/assets/img/galery-3.jpg" alt="">
+                    <img src="src/assets/img/galery-4.jpg" alt="">
+                    <img src="src/assets/img/galery-5.jpg" alt="">
+                    <img src="src/assets/img/galery-6.jpg" alt="">
+                    <img src="src/assets/img/galery-7.jpg" alt="">
+                    <img src="src/assets/img/galery-8.jpg" alt="">
+                    <img src="src/assets/img/galery-9.jpg" alt="">
+                    <img src="src/assets/img/galery-10.jpg" alt="">
+                    <img src="src/assets/img/galery-11.jpg" alt="">
+                    <img src="src/assets/img/galery-12.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="subtitle">
+                    Отзывы
+                </div>
+                <div class="reviews-block">
+                    <div class="review">
+                        <img src="" alt="">
+                        <p class="review__text">
+                            Хожу на йогу вечером, чтобы расслабиться 
+                            после  тяжелого трудового дня. И после занятий 
+                            наступает спокойствие! 
+                            Йога это отличный способ быстро
+                            и качественно расслабиться.
+                            Спасибо инструктору Серёже.
+                        </p>
+                        <div class="review__author">
+                            <div class="review__author__img">
+                                <img src="src/assets/img/review-1.jpg" alt="">
+                            </div>
+                            <div class="review__author-about">
+                                <div class="author__name">
+                                    Алекс Войтенко
+                                </div>
+                                <div class="review__date">
+                                    7 марта 2020
+                                </div>
+                                <div class="author__social">
 
-        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="" alt="">
+                        <p class="review__text">
+                            Наверное, каждому человеку хочется стать 
+                            лучше и совершеннее. Но при этом многие
+                            подразумевают исключительно физическое
+                            здоровье и внешний вид. О духовной
+                            составляющей задумываются не так часто.
+                            Вот именно йога - это комплекс занятий.
+                            Всем рекомендую! 
+                        </p>
+                        <div class="review__author">
+                            <div class="review__author__img">
+                                <img src="src/assets/img/review-2.jpg" alt="">
+                            </div>
+                            <div class="review__author-about">
+                                <div class="author__name">
+                                    Злата Хитрова
+                                </div>
+                                <div class="review__date">
+                                    3 марта 2020
+                                </div>
+                                <div class="author__social">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-slide">
+                    <button class="btn review-prev"></button>
+                    <button class="btn review-next"></button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="container">
-
+        <section class="company-trial">
+            <div class="container">
+                <div class="company-about">
+                    <div class="company-about-descr">
+                        <div class="company-about-address">
+                            <p>Адрес:</p>
+                            <span>Московский проспект, 22</span>
+                        </div>
+                        <div class="company-about-tel">
+                            <p>Телефон:</p>
+                            <span>8 (812) 690-10-10</span>
+                        </div>
+                        <div class="company-about-schedule">
+                            <p>График работы:</p>
+                            <span>Пн-Вс с 08:00 до 21:00</span>
+                        </div>
+                        <div class="company-about-email">
+                            <p>Email:</p>
+                            <span>yogaspb@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="company-about-social">
+                        <div class="social__item"></div>
+                        <div class="social__item"></div>
+                        <div class="social__item"></div>
+                    </div>
+                </div>
+                <div class="trial-request">
+                    <div class="subtitle">
+                        Запишитесь на бесплатное пробное занятие
+                    </div>
+                    <form action="">
+                        <label for="name">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя">
+                        </label>
+                        <label for="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+                        </label>
+                        <button class="btn btn_submit">
+                            Оставить заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <div class="footer-bottom-email">
+                Yogaspb.com
+            </div>
+            <div class="footer-bottom-copyright">
+                2021 Все права защищены
+            </div>
         </div>
     </footer>
 </body>
