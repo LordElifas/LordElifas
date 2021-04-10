@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="src/css/main.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div class="container">
             <div class="header-top">
                 <div class="header-top__logo">
-                    <img src="" alt="">
+                    <img src="src/assets/img/logo.svg" alt="">
                 </div>
                 <div class="header-top__nav">
                     <a href="#">направления</a>
@@ -31,13 +32,13 @@
                     Почувствуй расслабление в своём теле
                 </p>
                 <h1>YOGA</h1>
-                <button class="btn promo__btn">Запишитесь на бесплатное пробное занятие</button>
+                <div class="btn promo__btn"><div class="fas fa-chevron-right"></div> <span>Запишитесь на бесплатное пробное занятие</span></div>
             </div>
             <div class="header-bottom">
                 <div class="header-bottom-social">
-                    <a href="#">vk</a>
-                    <a href="#">tw</a>
-                    <a href="#">fb</a>
+                    <a href="#" class="fab fa-vk"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
                 </div>
                 <div class="header-bottom-city">
                     Санкт-Петербург
@@ -52,82 +53,93 @@
                     Направления
                 </div>
                 <div class="yoga-ways">
-                    <div class="yoga-way">
+                    <div class="yoga-way yoga-way-1">
                         <div class="yoga-way__img">
-                            <img src="" alt="">
+                            <img src="src/assets/img/yoga-1.jpg" alt="">
                         </div>
-                        <div class="yoga-way__title">
-                            Хатха йога
-                        </div>
-                        <div class="yoga-way__schedule">
-                            Пн, Ср, Пт – с 10:00 до 12:00 <br>
-                            Вт, Чт – с 19:00 до 21:00 
-                        </div>
-                        <div class="yoga-way__bottom">
-                            <div class="yoga-way__instructor">
-                                Инструктор<br>
-                                Понкратова Анастасия
+                        <div class="yoga-way__descr">
+                            <div class="yoga-way__title">
+                                Хатха йога
                             </div>
-                            <button class="btn yoga-way__submit"></button>
+                            <div class="yoga-way__schedule">
+                                Пн, Ср, Пт – с 10:00 до 12:00 <br>
+                                Вт, Чт – с 19:00 до 21:00 
+                            </div>
+                            <div class="yoga-way__bottom">
+                                <div class="yoga-way__instructor">
+                                    Инструктор<br>
+                                    Понкратова Анастасия
+                                </div>
+                                <button class="btn yoga-way__submit fas fa-chevron-right"></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="yoga-way">
-                        <div class="yoga-way__img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="yoga-way__title">
-                            Ашатанга йога
-                        </div>
-                        <div class="yoga-way__schedule">
-                            Пн, Ср – с 12:00 до 14:00 <br>
-                            Чт – с 15:00 до 17:00 
-                        </div>
-                        <div class="yoga-way__bottom">
-                            <div class="yoga-way__instructor">
-                                Инструктор<br>
-                                Емельянова Полина
+                    <div class="double-block">
+                        <div class="yoga-way yoga-way-2">
+                            <div class="yoga-way__img">
+                                <img src="src/assets/img/yoga-2.jpg" alt="">
                             </div>
-                            <button class="btn yoga-way__submit"></button>
+                            <div class="yoga-way__descr">
+                                <div class="yoga-way__title">
+                                    Ашатанга йога
+                                </div>
+                                <div class="yoga-way__schedule">
+                                    Пн, Ср – с 12:00 до 14:00 <br>
+                                    Чт – с 15:00 до 17:00 
+                                </div>
+                                <div class="yoga-way__bottom">
+                                    <div class="yoga-way__instructor">
+                                        Инструктор<br>
+                                        Емельянова Полина
+                                    </div>
+                                    <button class="btn yoga-way__submit fas fa-chevron-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yoga-way yoga-way-4">
+                            <div class="yoga-way__img">
+                                <img src="src/assets/img/yoga-4.jpg" alt="">
+                            </div>
+                            <div class="yoga-way__descr">
+                                <div class="yoga-way__title">
+                                    Кундалини йога
+                                </div>
+                                <div class="yoga-way__schedule">
+                                    Пн, Ср, Пт – с 09:00 до 10:30 <br>
+                                    Вт, Чт – с 08:30 до 10:00 
+                                </div>
+                                <div class="yoga-way__bottom">
+                                    <div class="yoga-way__instructor">
+                                        Инструктор<br>
+                                        Попов Серёжа
+                                    </div>
+                                    <button class="btn yoga-way__submit fas fa-chevron-right"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="yoga-way">
+                    <div class="yoga-way yoga-way-3">
                         <div class="yoga-way__img">
-                            <img src="" alt="">
+                            <img src="src/assets/img/yoga-3.jpg" alt="">
                         </div>
-                        <div class="yoga-way__title">
-                            Бикрам йога
-                        </div>
-                        <div class="yoga-way__schedule">
-                            Пт – с 16:00 до 18:00 <br>
-                            Вт – с 15:00 до 17:00 
-                        </div>
-                        <div class="yoga-way__bottom">
-                            <div class="yoga-way__instructor">
-                                Инструктор<br>
-                                Емельянова Полина
+                        <div class="yoga-way__descr">
+                            <div class="yoga-way__title">
+                                Бикрам йога
                             </div>
-                            <button class="btn yoga-way__submit"></button>
+                            <div class="yoga-way__schedule">
+                                Пт – с 16:00 до 18:00 <br>
+                                Вт – с 15:00 до 17:00 
+                            </div>
+                            <div class="yoga-way__bottom">
+                                <div class="yoga-way__instructor">
+                                    Инструктор<br>
+                                    Емельянова Полина
+                                </div>
+                                <button class="btn yoga-way__submit fas fa-chevron-right"></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="yoga-way">
-                        <div class="yoga-way__img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="yoga-way__title">
-                            Кундалини йога
-                        </div>
-                        <div class="yoga-way__schedule">
-                            Пн, Ср, Пт – с 09:00 до 10:30 <br>
-                            Вт, Чт – с 08:30 до 10:00 
-                        </div>
-                        <div class="yoga-way__bottom">
-                            <div class="yoga-way__instructor">
-                                Инструктор<br>
-                                Попов Серёжа
-                            </div>
-                            <button class="btn yoga-way__submit"></button>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -137,18 +149,18 @@
                     Абонементы
                 </div>
                 <div class="subscriptions-months">
-                    <div class="subcription-month">
+                    <div class="subscription-month">
                         <a href="#">1 месяц</a>
                     </div>
-                    <div class="subcription-month">
+                    <div class="subscription-month">
                         <a href="#">6 месяцев</a>
                     </div>
-                    <div class="subcription-month">
+                    <div class="subscription-month">
                         <a href="#">12 месяцев</a>
                     </div>
                 </div>
                 <div class="subscription-choose">
-                    <div class="subscription-type">
+                    <div class="subscription-type type-1">
                         <div class="subscription-type__name">
                             Утро
                         </div>
@@ -163,7 +175,7 @@
                             Заказать абонемент
                         </button>
                     </div>
-                    <div class="subscription-type">
+                    <div class="subscription-type type-2">
                         <div class="subscription-type__name">
                             Безлимит
                         </div>
@@ -177,7 +189,7 @@
                             Заказать абонемент
                         </button>
                     </div>
-                    <div class="subscription-type">
+                    <div class="subscription-type type-3">
                         <div class="subscription-type__name">
                             Вечер
                         </div>

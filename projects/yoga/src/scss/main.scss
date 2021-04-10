@@ -1,14 +1,297 @@
+@import url(../css/fonts.min.css);
 * {
     box-sizing: border-box;
 }
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.subtitle {
+    font-family: 'AbhayaLibre-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 15px;
+    color: #8E80A9;
+    text-align: center;
+}
 .header {
     background: url(../assets/img/bg-header.png) no-repeat;
+    padding-bottom: 200px;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__nav {
+            a {
+                font-family: 'Montserrat-Semi-Bold';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #8B7EAC;
+                text-shadow: 0px 0px 20px #ECE7EC;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-right: 30px;
+            }
+            a:last-child {
+                margin-right: 0;
+            }
+        }
+        &__tel {
+            a {
+                font-family: 'Montserrat';
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 0px;
+                color: #8B7EAC;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+    &-main {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+
+        .subheader {
+            font-weight: normal;
+            font-size: 45px;
+            line-height: 0px;
+            color: #8E80A9;
+            font-family: 'Caveat';
+            margin-left: 11%;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            font-size: 265px;
+            letter-spacing: 0.2em;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 50px rgba(123, 121, 161, 0.75);
+            text-align: center;
+            margin: 0;
+        }
+        .promo__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fas {
+                width: 56px;
+                height: 48px;
+                background: #E65C7B;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                margin-right: 10px;
+            }
+            span {
+                font-family: 'Montserrat-Semi-Bold';
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #E65C7B;
+            }
+
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 110px;
+        &-social {
+            a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: rgba(139, 126, 172, 0.65);
+            }
+            a:last-child {
+                margin-right: 0;
+            }
+        }
+        &-city {
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 15px;
+            color: #8B7EAC;
+        }
+    }
 }
 .yoga-ways-block {
     background: url(../assets/img/bg-2.png) no-repeat;
+    margin-bottom: 50px;
+    .double-block {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+
+}
+    .yoga-ways {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        .yoga-way {
+            width: 250px;
+            height: 300px;
+            box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+            &__descr {
+                padding: 20px 20px 0 20px;
+            }
+            &__title {
+                font-family: 'AbhayaLibre-Bold';
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 15px;
+                color: #8E80A9;
+                margin-bottom: 10px;
+            }
+            &__schedule {
+                color: #8E80A9;
+                line-height: 20px; 
+                margin-bottom: 15px;
+            }
+            &__schedule, &__instructor {
+                font-family: 'Montserrat-Medium';
+                font-weight: 500;
+                font-size: 12px;
+            }
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &__instructor {
+                color: #E65C7B;
+            }
+            &__submit {
+                background-color: #8E80A9;
+                color: white;
+                border: none;
+                width: 45px;
+                height: 30px;
+            }
+        }
+        .yoga-way-1 {
+            height: 400px;
+            width: 350px;
+        }
+        .yoga-way-2 {
+            margin-bottom: 30px;
+        }
+    }
 }
 .subscriptions {
     background: url(../assets/img/bg-3.png) no-repeat;
+    padding-bottom: 60px;
+    .subtitle {
+        margin-bottom: 60px;
+    }
+    .subscriptions-months {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        .subscription-month {
+            margin-right: 60px;
+            a {
+                font-family: 'Montserrat-Medium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: #E65C7B;
+                text-decoration: none;
+            }
+        }
+        .subscription-month:last-child {
+            margin-right: 0;
+        }
+    }
+    .subscription-choose {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        .subscription-type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+            background-color: #fff;
+        }
+        .type-1, .type-3 {
+            width: 265px;
+            height: 287px;
+            padding: 58px 21px 25px 21px;
+            .subscription-type__name {
+                font-family: 'AbhayaLibre-Bold';
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 20px;
+                color: #8E80A9;
+                margin-bottom: 19px;
+            }
+            .subscription-type__price {
+                font-family: 'AbhayaLibre-Bold';
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 20px;
+                text-align: center;
+                color: #8E80A9;
+                margin-top: 26px;
+                margin-bottom: 27px;
+            }
+        }
+        .type-2 {
+            width: 300px;
+            height: 331px;
+            padding: 63px 38px 33px 38px;
+            margin: 0 50px;
+            .subscription-type__name {
+                font-family: 'AbhayaLibre-Bold';
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 20px;
+                color: #8E80A9;
+                margin-bottom: 14px;
+            }
+            .subscription-type__price {
+                font-family: 'AbhayaLibre-Bold';
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 20px;
+                text-align: center;
+                color: #8E80A9;
+                margin-top: 36px;
+                margin-bottom: 51px;
+            }
+        }
+        .subscription-type__schedule {
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #E65C7B;
+        }
+        .subscription-type__subscribe {
+            background-color: #8E80A9;
+            width: 223px;
+            height: 52px;
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            border: none;
+        }
+    }
 }
 .team {
     background: url(../assets/img/bg-4.png) no-repeat;
