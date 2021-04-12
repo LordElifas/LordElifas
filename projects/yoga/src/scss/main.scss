@@ -7,8 +7,7 @@
     margin: 0 auto;
 }
 .subtitle {
-    font-family: 'AbhayaLibre-Bold';
-    font-style: normal;
+    font-family: 'AbhayaLibre';
     font-weight: bold;
     font-size: 30px;
     line-height: 15px;
@@ -189,7 +188,7 @@
 }
 .subscriptions {
     background: url(../assets/img/bg-3.png) no-repeat;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     .subtitle {
         margin-bottom: 60px;
     }
@@ -295,7 +294,240 @@
 }
 .team {
     background: url(../assets/img/bg-4.png) no-repeat;
+    padding-bottom: 60px;
+    &-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+        margin: 60px auto 0 auto;
+        max-width: 1010px;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 25px;
+        }
+        &__text {
+            padding: 0 30px;
+        }
+        &__name {
+            font-family: 'AbhayaLibre-Bold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            color: #8E80A9;
+        }
+        &__exp {
+            font-family: 'Montserrat-Medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #E65C7B;
+        }
+        &__descr {
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            color: #8E80A9;
+        }
+    }
+    &-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .team-card__buttons  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            .btn {
+                background: none;
+                width: 45px;
+                height: 30px;
+                border: 1px solid #8E80A9;
+                font-weight: 300;          
+            }
+            .active {
+                background: #8E80A9;
+                border: none;
+                color: white;
+            }
+        }
+        .team-card__number {
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8E80A9;
+            margin: 0 20px;
+        }
+    }
+}
+.gallery {
+    padding-bottom: 60px;
+    &-block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 20px 20px 20px 30px;
+        max-width: 1082px;
+        border: 5px solid #F0EBF9;
+        border-radius: 10px;
+        box-sizing: border-box;
+        img {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+.reviews {
+    padding-bottom: 18px;
+    &-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 62px;
+        margin-bottom: 26px;
+        .review {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 34px 50px 30px 87px;
+            width: 442px;
+            height: 315px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+            .quotes {
+                font-size: 26px;
+                line-height: 15px;
+                color: rgba(142, 128, 169, 0.39);
+            }
+            &__text {
+                font-family: 'Montserrat-Medium';
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: #8E80A9;
+            }
+            &__author {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 51px;
+                &__img {
+                    margin-right: 13px;
+                    height: 51px;
+                }
+                &-about {
+                    .author__name {
+                        font-family: 'Montserrat-Medium';
+                        font-weight: 500;
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                        color: rgba(230, 92, 123, 0.7);
+                    }
+                    .review__date {
+                        font-family: 'Montserrat-Medium';
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 20p;
+                        color: rgba(142, 128, 169, 0.7);
+                    }
+                    .author__social {
+                        margin-top: 7px;
+                        i { 
+                            font-size: 14px;
+                            color: rgba(139, 126, 172, 0.65);
+                        }
+                        i:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .review:first-child {
+            margin-right: 30px;
+        }
+    }
+    &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            width: 45px;
+            height: 30px;
+            background: #8E80A9;
+            color: #fff;
+            border: none;
+            font-weight: 300;
+        }
+        .btn:first-child {
+            margin-right: 30px;
+        }
+    }
 }
 .company-trial {
     background: url(../assets/img/bg-footer.png) no-repeat;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 0;
+        .company-about {
+            display: flex;
+            flex-direction: column;
+            &-descr {
+                display: flex;
+                flex-wrap: wrap;
+                font-family: 'Montserrat-Medium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: #8E80A9;
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .subtitle {
+            line-height: 40px;
+            text-align: left;
+            width: 430px;
+        }
+        .trial-form {
+            width: 407px;
+            margin-top: 40px;
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #8E80A9;
+                background: transparent;
+            }
+            input[type="text"] {
+                margin-bottom: 47px;
+            }
+            input[type="tel"]{
+                margin-bottom: 57px;
+            }
+            .btn {
+                font-family: 'Montserrat-Medium';
+                height: 56px;
+                background: #E65C7B;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                width: 100%;
+                border: none;
+            }
+        }
+    }
 }
