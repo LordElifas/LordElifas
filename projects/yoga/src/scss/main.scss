@@ -5,6 +5,7 @@
 .container {
     max-width: 1160px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .subtitle {
     font-family: 'AbhayaLibre';
@@ -477,25 +478,31 @@
     background: url(../assets/img/bg-footer.png) no-repeat;
     .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 70px 0;
         .company-about {
             display: flex;
             flex-direction: column;
+            margin-right: 100px;
             &-descr {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 font-family: 'Montserrat-Medium';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 20px;
                 color: #8E80A9;
-                p {
-                    font-size: 14px;
+                width: 353px;
+                span {
+                    font-size: 12px;
                 }
             }
+        }
+        .trial-request {
+            margin-left: 60px;
         }
         .subtitle {
             line-height: 40px;
@@ -505,17 +512,28 @@
         .trial-form {
             width: 407px;
             margin-top: 40px;
+
             input {
                 width: 100%;
                 border: none;
                 border-bottom: 1px solid #8E80A9;
                 background: transparent;
+                padding-bottom: 5px;
+                padding-left: 0;
             }
             input[type="text"] {
                 margin-bottom: 47px;
             }
             input[type="tel"]{
                 margin-bottom: 57px;
+            }
+            input::placeholder {
+                font-family: 'Montserrat-Medium';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(142, 128, 169, 0.4);
             }
             .btn {
                 font-family: 'Montserrat-Medium';
@@ -529,5 +547,20 @@
                 border: none;
             }
         }
+    }
+}
+.footer-bottom {
+    padding-top: 40px;
+    background: #8373A1;
+    height: 124px;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Montserrat-Medium';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
     }
 }
