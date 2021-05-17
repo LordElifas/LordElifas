@@ -50,23 +50,25 @@ img {
   width: 280px;
 }
 
-.page-header {
-  position: fixed;
-  z-index: 3;
-  width: 100%;
+.page-header_top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 
-  &_top {
-    position: relative;
-    padding: 21px 0;
-    height: 66px;
-  }
-
+  height: 66px;
+  padding: 21px 20px;
   &__logo {
     text-decoration: none;
   }
 }
 
 .main-nav {
+
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+
   &__toggle {
     background-color: transparent;
     border: none;
@@ -74,18 +76,10 @@ img {
     width: 50px;
     height: 40px;
   }
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
+
 }
 
 .main-nav_closed {
-  .page-header_top {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
   .main-nav__toggle::before {
     content: "";
     position: absolute;
@@ -104,11 +98,8 @@ img {
 }
 
 .main-nav_opened {
-  .page-header_top {
-    background-color: $headerBg;
-    box-shadow: 0 1px 0 #000000;
-  }
-
+  background-color: $headerBg;
+  box-shadow: 0 1px 0 #000000;
   .main-nav__toggle {
     &::before,
     &::after {
@@ -132,7 +123,9 @@ img {
 
   .main-nav__list {
     display: block;
-
+    position: absolute;
+    top: 66px;
+    width: 100%;
   }
 }
 
@@ -610,158 +603,6 @@ img {
   }
 }
 
-//.heading {
-//  font-family: "Open Sans Light", sans-serif;
-//  font-weight: 300;
-//  font-size: 50px;
-//  line-height: 68px;
-//  text-align: center;
-//}
-//
-//.subheader {
-//  font-family: "Open Sans Bold", sans-serif;
-//  font-style: normal;
-//  font-weight: bold;
-//  font-size: 30px;
-//  line-height: 100%;
-//  text-align: center;
-//  color: #000000;
-//}
-//
-//.page-header {
-//  position: fixed;
-//  width: 100%;
-//  background-color: rgba(0, 0, 0, 0.3);
-//  z-index: 2;
-//
-//  .header-nav {
-//    display: flex;
-//    justify-content: space-between;
-//    align-items: center;
-//    min-height: 110px;
-//
-//    .header__logo {
-//      margin-top: -5px;
-//    }
-//
-//    &__list {
-//      display: flex;
-//
-//      .list__item {
-//        list-style: none;
-//        margin-left: 79px;
-//      }
-//
-//      .list__item:first-child {
-//        margin-left: 0;
-//      }
-//
-//      .list__link {
-//        font-style: normal;
-//        font-weight: normal;
-//        font-size: 18px;
-//        line-height: 100%;
-//        color: #ffffff;
-//        text-decoration: none;
-//      }
-//    }
-//  }
-//}
-//
-//.promo {
-//  position: relative;
-//  padding: 170px;
-//  background-image: url("../img/bg-back-desktop@1x.jpg");
-//  background-position: center center;
-//  background-repeat: no-repeat;
-//  height: 853px;
-//  z-index: 1;
-//
-//  &__heading {
-//    color: #ffffff;
-//  }
-//
-//  &-descr {
-//    text-align: center;
-//    position: relative;
-//    z-index: 2;
-//    width: 300px;
-//  }
-//
-//  &__btn {
-//    font-weight: bold;
-//    font-size: 21px;
-//    line-height: 18px;
-//    border: 3px solid #ffffff;
-//    border-radius: 29px;
-//    background-color: transparent;
-//    color: #ffffff;
-//    height: 56px;
-//    width: 100%;
-//    cursor: pointer;
-//  }
-//
-//  .os-items {
-//    margin: 70px 0 50px 0;
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//  }
-//
-//  .os__item {
-//    margin-right: 35px;
-//  }
-//
-//  .os__item:last-child {
-//    margin-right: 0;
-//  }
-//
-//  .os__descr {
-//    color: #ffffff;
-//    font-weight: 300;
-//    font-size: 18px;
-//    line-height: 133%;
-//    margin-bottom: 0;
-//  }
-//
-//  &__image {
-//    position: absolute;
-//    bottom: 0;
-//    left: 17%;
-//    z-index: 1;
-//  }
-//}
-//.advantages-block {
-//  padding-bottom: 59px;
-//}
-//
-//.advantages__heading {
-//  margin-bottom: 72px;
-//}
-//.advantages-items {
-//  display: flex;
-//  justify-content: space-around;
-//}
-//.advantage__item {
-//  width: 240px;
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-self: center;
-//}
-//
-//.advantage__subheader {
-//  margin: 59px 0 0 0;
-//}
-//
-//.advantages__descr {
-//  margin-top: 35px;
-//  font-size: 18px;
-//  line-height: 167%;
-//  text-align: center;
-//  color: #283645;
-//}
-//
-
+@import "form.scss";
 @import "media.scss";
 

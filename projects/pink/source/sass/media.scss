@@ -12,6 +12,14 @@
     padding-top: 27px;
   }
 
+  .main-nav {
+    height: 110px;
+  }
+  .main-nav_opened {
+    .main-nav__list {
+      top: 110px;
+    }
+  }
   .main-nav__toggle {
     top: 16px;
   }
@@ -295,8 +303,14 @@
   }
 
   .page-header {
+    &_top {
+      padding: 27px 0;
+    }
     .main-nav {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 130px;
       &__toggle {
         display: none;
       }
@@ -304,11 +318,18 @@
         display: flex;
       }
       .site-list {
+
         &__item {
           margin-right: 79px;
+          background-color: transparent;
+          box-shadow: none;
         }
         &__item:last-child {
           margin-right: 0;
+        }
+        &__link {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
         }
       }
     }

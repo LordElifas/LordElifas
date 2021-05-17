@@ -10,28 +10,42 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <title>Pink</title>
 </head>
-<body>
+<body class="page-index">
   <header class="page-header">
-    <nav class="main-nav main-nav_closed">
-      <div class="page-header_top">
-          <div class="main-nav__top">
-            <a class="page-header__logo" href="#">
-              <picture>
-                <source srcset="./img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
-                <source srcset="./img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-                <img src="./img/logo-pink-white-mobile.svg" alt="pink logo">
-              </picture>
+      <nav class="main-nav main-nav_closed">
+        <div class="page-header_top">
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source srcset="./img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="./img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img src="./img/logo-pink-white-mobile.svg" alt="pink logo">
+            </picture>
+          </a>
+          <button class="main-nav__toggle"></button>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              главная
             </a>
-            <button class="main-nav__toggle"></button>
-          </div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="#">главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">html academy</a></li>
-          </ul>
-      </div>
-    </nav>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">
+              html academy
+            </a>
+          </li>
+        </ul>
+      </nav>
   </header>
   <main>
     <section class="promo-mobile">
