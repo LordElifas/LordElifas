@@ -291,6 +291,10 @@
       flex-direction: row;
     }
   }
+
+  fieldset {
+    border: 2px solid #E5E5E5;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -486,9 +490,19 @@
       }
     }
   }
+
   .map-images {
     .map-bg {
       height: 123px;
+    }
+  }
+
+  .page-form {
+
+    .form-name {
+      input[name="name"] {
+        width: 376px;
+      }
     }
   }
 }

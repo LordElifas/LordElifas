@@ -1,4 +1,49 @@
-.form-promo{
+.page-form  {
+  min-width: 320px;
+}
+
+fieldset {
+  border: none;
+}
+
+::placeholder {
+  color: rgba(40, 54, 69, 1);
+}
+
+.title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #D22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  height: 59px;
+  width: 276px;
+  border: 2px solid #E5E5E5;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+textarea {
+  padding: 10px 0 0 20px;
+  width: 100%;
+  border: 2px solid #E5E5E5;
+}
+
+::placeholder, .form-achieve label, .form-app-block label {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 167%;
+}
+
+.form-achievements-block, .form-contact-block, .form-app-block, .form-emotions-block {
+  padding: 42px 0;
+} 
+
+.form-promo {
   background-image: url("../img/bg-back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +54,80 @@
 .form-promo__heading {
   font-weight: 300;
   font-size: 24px;
-  line-height: 33px;
   color: #ffffff;
   text-align: center;
+}
+
+.form-main__descr {
+  font-size: 14px;
+  line-height: 214%;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.form-name-block {
+  padding: 54px 20px 44px 20px;
+}
+
+.form-name__input {
+  margin: 0 0 29px 0;
+  label {
+    padding-left: 21px;
+  }
+}
+
+.form-name__input:last-child {
+  margin-bottom: 0;
+}
+
+.form-achievements-block, .form-app-block {
+   background-color: #F2F2F2;
+}
+
+.form-achieve__item {
+  margin-bottom: 47px;
+}
+
+.achieve__title {
+  margin-bottom: 40px;
+  width: 218px;
+}
+
+.form-achieve__item:last-child {
+  margin-bottom: 0;
+}
+
+.form-contact-block {
+  legend.title {
+    display: none;
+  }
+
+  label {
+    padding-left: 22px;
+  }
+
+  .form-contact__item:first-of-type {
+    margin-bottom: 29px;
+  }
+}
+
+
+.form-app-block {
+  .title {
+    margin-bottom: 40px;
+  }
+  .form-app {
+    &__input {
+      margin-bottom: 38px;
+    }
+    &__input:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-emotions-block {
+  .title {
+    margin-bottom: 15px;
+  }
 }

@@ -61,22 +61,22 @@
       </p>
       <div class="form-name">
         <div class="form-name__input">
-          <label for="surname">Фамилия:</label>
+          <label for="surname" class="title">Фамилия:</label>
           <input id="surname" name="surname" placeholder="Укажите фамилию *" type="text">
         </div>
         <div class="form-name__input">
-          <label for="name">Имя:</label>
+          <label for="name" class="title">Имя:</label>
           <input id="name" name="name" placeholder="Введите ваше имя *" type="text">
         </div>
         <div class="form-name__input">
-          <label for="patronymic">Отчество:</label>
+          <label for="patronymic" class="title">Отчество:</label>
           <input id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" type="text">
         </div>
       </div>
     </div>
-    <div class="section form-achievements-block">
+    <div class="form-achievements-block">
       <fieldset>
-        <legend class="achieve__title">
+        <legend class="achieve__title title">
           ваши безбашенные достижения в путешествии
         </legend>
         <div class="form-achieve">
@@ -109,17 +109,21 @@
     </div>
     <div class="form-contact-block">
       <fieldset>
-        <legend>контактная информация</legend>
-        <input id="email" name="email" placeholder="Номер, пожалуйста" type="email">
-        <label for="email">номер телефона</label>
+        <legend class="title">контактная информация</legend>
+        <div class="form-contact__item">
+          <label for="email" class="title">номер телефона</label>
+          <input id="email" name="email" placeholder="Номер, пожалуйста" type="email">
+        </div>
+        <div class="form-contact__item">
+          <label for="tel" class="title">адрес почты</label>
+          <input id="tel" name="tel" placeholder="Введите почту *" type="tel">
+        </div>
 
-        <input id="tel" name="tel" placeholder="Введите почту *" type="tel">
-        <label for="tel">адрес почты</label>
       </fieldset>
     </div>
     <div class="form-app-block">
       <fieldset>
-        <legend>с каким приложением путешествовали?</legend>
+        <legend class="title">с каким приложением путешествовали?</legend>
         <div class="form-app">
           <div class="form-app__input">
             <input id="" name="" type="radio" value="">
@@ -138,9 +142,9 @@
     </div>
     <div class="form-emotions-block">
       <fieldset>
-        <legend>опишите свои эмоции</legend>
+        <legend class="title">опишите свои эмоции</legend>
         <div class="form-emotions">
-          <textarea name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях."></textarea>
+          <textarea name="emotions" id="emotions" cols="auto" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях."></textarea>
         </div>
       </fieldset>
     </div>
