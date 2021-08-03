@@ -1,0 +1,30 @@
+.messages {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+.dialogName a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.dialogName {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.dialogName:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    left: -20px;
+    top: 10px;
+}

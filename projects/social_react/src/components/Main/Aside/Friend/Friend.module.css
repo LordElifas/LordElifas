@@ -1,0 +1,17 @@
+.friend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.friend:nth-child(3) {
+    margin-right: 0;
+}
+.friend img {
+    width: 60px;
+    height: 60px;
+}
+.friend p {
+    margin-top: 10px;
+}

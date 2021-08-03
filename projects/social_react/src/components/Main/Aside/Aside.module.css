@@ -1,0 +1,33 @@
+.aside {
+    background-color: #13CE66;
+    flex-basis: 16%;
+    color: white;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.list {
+    margin-bottom: 30px;
+}
+
+.list li {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.active {
+    color: blue;
+}
+.friends h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.friendsList {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
