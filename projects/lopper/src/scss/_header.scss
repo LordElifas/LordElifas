@@ -1,0 +1,49 @@
+.header {
+  min-height: 144px;
+  display: flex;
+  align-items: center;
+  @media (min-width: 1400px) {
+    &__logo {
+      width: 166px;
+    }
+    &__item {
+      margin-right: 54px;
+    }
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 128px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    &__item {
+      list-style: none;
+      margin-right: 34px;
+    }
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+  .phone {
+    margin-left: 98px;
+    display: flex;
+    align-items: center;
+    a {
+      width: 226px;
+      margin-left: 18px;
+    }
+  }
+  .menu {
+    margin-left: 100px;
+  }
+  a {
+    color: #30233D;
+    font-weight: 800;
+    font-size: 14.4px;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+}
