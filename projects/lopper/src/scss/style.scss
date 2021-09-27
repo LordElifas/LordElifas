@@ -10,15 +10,23 @@
 @import "fonts";
 @import "_header.scss";
 @import "_main.scss";
+@import "_footer.scss";
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 .container {
   padding: 0 100px;

@@ -236,11 +236,172 @@
   color: #F61067;
 }
 
+.sub h3 {
+  font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+  color: #30233D;
+}
+
+.sub p {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #776C82;
+}
+
+.sub .subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub .subscribe-form form {
+  width: 558px;
+}
+
+.sub .subscribe-form input {
+  border: none;
+  background-color: transparent;
+  width: 332px;
+  height: 38px;
+}
+
+.sub .subscribe-form ::-webkit-input-placeholder {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9B94A3;
+}
+
+.sub .subscribe-form ::-moz-placeholder {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9B94A3;
+}
+
+.sub .subscribe-form :-ms-input-placeholder {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9B94A3;
+}
+
+.sub .subscribe-form ::-ms-input-placeholder {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9B94A3;
+}
+
+.sub .subscribe-form ::placeholder {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9B94A3;
+}
+
+.sub .subscribe-form .btn_submit {
+  font-weight: 800;
+  font-size: 12.6px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #F61067;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 242, 242, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+      -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.footer {
+  padding-top: 126px;
+  background-color: #150433;
+  color: #FCFCFC;
+}
+
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo .logo {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.footer-logo p {
+  font-weight: normal;
+  font-size: 16.2px;
+  line-height: 26px;
+  margin-top: 17px;
+  width: 160px;
+}
+
+.footer .title-small {
+  font-weight: 800;
+  font-size: 12.6px;
+  letter-spacing: 6px;
+  border-bottom: 1px solid #F61067;
+  padding-bottom: 10px;
+  margin-bottom: 26px;
+}
+
+.footer a {
+  color: #FCFCFC;
+  font-weight: normal;
+}
+
+.footer li {
+  font-weight: bold;
+  font-size: 12.6px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .copyright {
+  font-weight: normal;
+  font-size: 11.7px;
+  margin-top: 64px;
+}
+
 body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 h1,
@@ -249,9 +410,19 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
