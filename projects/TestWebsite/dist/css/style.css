@@ -1,0 +1,528 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.bordered {
+  border: 1px solid black;
+}
+
+.heading,
+.sub-heading {
+  text-align: center;
+  margin-top: 0;
+}
+
+.menu {
+  position: relative;
+  margin-top: 30px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu #menu-btn {
+  background-color: blue;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.menu li {
+  list-style: none;
+  background-color: #52b7f3;
+  padding: 5px;
+  color: white;
+}
+
+.menu-nav {
+  display: none;
+  position: absolute;
+}
+
+.menu-nav.active {
+  display: block;
+}
+
+.menu-link {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.menu-subtype {
+  display: none;
+}
+
+.menu-subtype.active {
+  display: block;
+  position: relative;
+  left: 50px;
+}
+
+.profile-top {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.profile-main {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.profile-descr-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.profile-img img {
+  display: block;
+}
+
+.profile-descr {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.profile-descr h3 {
+  margin: 0;
+}
+
+.profile-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-links a {
+  color: #52B7F3;
+}
+
+.sub-block {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.sub-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sub-item {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.sub-item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-item img {
+  height: 39px;
+  margin-right: 20px;
+}
+
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: auto;
+}
+
+.custom-checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #b3d7ff;
+}
+
+.custom-checkbox > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-checkbox > input:focus + span::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-checkbox > input:focus:not(:checked) + span::before {
+  border-color: #80bdff;
+}
+
+.custom-checkbox > input:checked + span::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+.sub-item:first-child {
+  margin-top: 0;
+}
+
+.sub-ways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-way {
+  width: 42%;
+  padding: 10px 5px;
+}
+
+.sub-way label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-radio > span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #b3d7ff;
+}
+
+.custom-radio > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-radio > input:focus + span::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-radio > input:focus:not(:checked) + span::before {
+  border-color: #80bdff;
+}
+
+.custom-radio > input:checked + span::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.custom-radio > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+.prompt {
+  position: relative;
+  margin-left: auto;
+  top: -20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prompt a {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.prompt-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.prompt-container.active {
+  display: block;
+}
+
+.prompt-body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prompt-descr {
+  background-color: #fff;
+  color: #000;
+  max-width: 90%;
+  position: relative;
+  padding: 40px 20px 20px 20px;
+}
+
+.prompt-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.prompt-close a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab .tab-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab .tab-link {
+  border: 1px solid black;
+  width: 30%;
+  padding: 10px 0;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab .tab-link {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.tab .tab-link:hover {
+  background-color: darkgray;
+}
+
+.tab .tab-link.active {
+  background-color: cornflowerblue;
+}
+
+.tab .tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab .tab-content.active {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .menu #menu-btn {
+    display: none;
+  }
+
+  .menu nav {
+    display: block;
+    position: static;
+  }
+
+  .menu nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .menu-subtype.active {
+    left: 0;
+  }
+
+  .profile-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .profile-img {
+    margin-right: 20px;
+  }
+
+  .sub-items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .sub-item {
+    margin-top: 0;
+    width: 33%;
+  }
+
+  .prompt-descr {
+    max-width: 50%;
+  }
+}
+@supports (-webkit-appearance:none){
+.custom-checkbox > input:checked + span::before{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")}
+.custom-radio > input:checked + span::before{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")}
+}
+
+ @media (min-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}

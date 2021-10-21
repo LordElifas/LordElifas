@@ -4,21 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hunger</title>
-	<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/style.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
 	 <div class="container">
-	  <div classs="header_nav">
+	  <div class="header_nav">
 	    <ul class="header_list_nav">
 	  	  <li><a href="#home">HOME</a></li>
 	  	  <li><a href="#about">ABOUT</a></li>
 	  	  <li><a href="#team">TEAM</a></li>
 	  	  <li><a href="#booking">BOOKING</a></li>
-	   		<li><img src="img/header-logo.png" alt="header-logo"></li>
+	   	  <li><img src="img/header-logo.png" alt="header-logo"></li>
 	      <li><a href="#menu">MENU</a></li>
 	  	  <li><a href="#galerie">GALERIE</a></li>
 	  	  <li><a href="#events">EVENTS</a></li>
@@ -55,7 +52,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		    <a class="button header_button header_button_booking" href="#">BOOK TABLE</a>
 		    <a class="button header_button header_button_explore" href="#">EXPLORE</a>
 		  </div>
-		  <a href="#map"class="header_down_button"><i class="fas fa-angle-down"></i></a>
+		  <a href="#map" class="header_down_button"><i class="fas fa-angle-down"></i></a>
 	  	</div>
 	  	<div class="social_buttons">
 	  	  <a class="social_button" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -73,7 +70,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		    <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
 			</div>
 			<div class="about_us_image">
-		  	<img class="image" src="img/about-img.png" alt="">
+		  	<img class="image" src="img/about-img.png" alt="about">
 			</div>
 		</div>
 	</section>
@@ -82,7 +79,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	  	<h3>OUR TEAM</h3>
 		<div class="team">
 		  <div class="team_image">
-			<img class="image" src="img/Rectangle.png" alt="">
+			<img class="image" src="img/Rectangle.png" alt="team">
 		  </div>
 		  <div class="team_text">
 		  	<h2>MASTER CHEF</h2>
@@ -97,20 +94,32 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		<div class="booking">
 		  <div class="booking_form_title">
 		  	<h2>BOOK A TABLE</h2>
-		  	<form action="">
+		  	<form>
 		  	  <div class="booking_form">
-		  	    <input type="text" placeholder="Name">
-		  	    <input type="text" placeholder="Email">
-		  	    <input type="text" placeholder="Phone">
-		  	    <input type="text" placeholder="People">
-		  	    <input type="text" placeholder="Date(mm/dd)">
-		  	    <input type="text" placeholder="Time">
+				  <label for="form_name">
+					  <input id="form_name" type="text" placeholder="Name">
+				  </label>
+				  <label for="mail">
+					  <input id="mail" type="text" placeholder="Email">
+				  </label>
+				  <label for="form_phone">
+					  <input id="form_phone" type="text" placeholder="Phone">
+				  </label>
+				  <label for="form_people">
+					  <input id="form_people" type="text" placeholder="People">
+				  </label>
+				  <label for="form_date">
+					  <input id="form_date" type="text" placeholder="Date(mm/dd)">
+				  </label>
+				  <label for="form_time">
+					  <input id="form_time" type="text" placeholder="Time">
+				  </label>
 		  	   </div> 
 		  	   <button class="booking_button" type="submit">BOOK NOW</button>
 		  	</form>
 		  </div>
 		  <div class="booking_img">
-		  	<img class="image" src="img/about-img-2.png" alt="">
+		  	<img class="image" src="img/about-img-2.png" alt="about">
 		  </div>
 		</div>	
 	  </div>
@@ -208,7 +217,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					<span class="menu_description">Integer ullamcorper neque eu purus euismod</span>
 				</li>
 			</ul>
-
 			<ul>
 				<li>
 					<span class="menu_title">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span><br>
@@ -239,7 +247,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					<span class="menu_description">Integer ullamcorper neque eu purus euismod</span>
 				</li>
 			</ul>
-
 			<ul>
 				<li>
 					<span class="menu_title">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span><br>
@@ -270,7 +277,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 					<span class="menu_description">Integer ullamcorper neque eu purus euismod</span>
 				</li>
 			</ul>
-
 		</div>
 	  </div>
 	</section>
@@ -280,12 +286,12 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		 	 <h3>PRIVATE EVENTS</h3>
 		 	 <div class="events_images">
 		 	 	<div class="events_image-1">
-		  		<img src="img/events-image-1.png" alt="">
+		  		<img src="img/events-image-1.png" alt="event">
 		  		<span class="vertical_text vertical_text-1">WEDDINGS</span>
 		  	</div>
 		  	<div class="events_image-2">
 		  		<span class="vertical_text vertical_text-2">CORPORATE PARTIES</span>
-		  		<img src="img/events-image-2.png" alt="">
+		  		<img src="img/events-image-2.png" alt="event">
 				</div>
 		 	 </div>
 				<p>For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.</p>
@@ -293,10 +299,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		</div>
 	</section>
 	<section id="galerie" class="gallery">
-		 <img src="img/events-image-3.png" alt="">
-		 <img src="img/events-image-4.png" alt="">
-		 <img src="img/events-image-5.png" alt="">
-		 <img src="img/events-image-6.png" alt="">
+		 <img src="img/events-image-3.png" alt="event">
+		 <img src="img/events-image-4.png" alt="event">
+		 <img src="img/events-image-5.png" alt="event">
+		 <img src="img/events-image-6.png" alt="event">
 	</section>
 	<section id="contact" class="contact">
 	  <div class="container">
@@ -306,21 +312,31 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 		<div class="contact_form">
 		  <form action="">
 		  	<div class="form">
-		  		<input type="text" placeholder="Name" name="name">
-		  		<input type="text" placeholder="Email" name="email">
-		  		<input type="text" placeholder="Phone" name="phone">
-		  		<textarea 
-		  		class="textarea"
-		  		placeholder="Message" 
-		  		name="message"   
-		  		rows="5">
-		  		</textarea>
+				<label for="name">
+					<input id="name" type="text" placeholder="Name" name="name">
+				</label>
+				<label for="email">
+					<input id="email" type="text" placeholder="Email" name="email">
+				</label>
+				<label for="phone">
+					<input id="phone" type="text" placeholder="Phone" name="phone">
+				</label>
+				<label for="textarea">
+					<textarea
+							id="textarea"
+							class="textarea"
+							placeholder="Message"
+							name="message"
+							rows="5">
+		  			</textarea>
+				</label>
 		  	<p>
 		  		<i class="fas fa-map-marker-alt"> <span> 5th London Boulevard, U.K.</span></i>
 		  		<i class="fas fa-phone"> <span> +40 729 131 637 </span></i>
 		  		<i class="fas fa-envelope"> <span> office@gmail.com</span></i>
 		  	</p>
 		  	<button class="contact_button">SEND MESSAGE</button>
+			</div>
 		  </form>
 		</div>	
 	  </div>

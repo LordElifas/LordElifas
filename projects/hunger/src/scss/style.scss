@@ -65,23 +65,22 @@ p {
   color: black;
 }
 header {
-  background: url(../img/header-bg.png) no-repeat;
+  // background: url(../img/header-bg.png) no-repeat;
   background-size:cover;
   color: white;
   padding-top: 30px;
   padding-bottom: 83px;
 }
+
 header a {
   color: white;
 }
-
-
-
 
 .header_list_nav {
   display: flex;
   justify-content: space-between;
 }
+
 h1 {
   font-family: 'Banny Round';
   font-size: 96px;
@@ -154,16 +153,16 @@ h2::after {
   position: fixed;
   visibility: hidden;
   top: 0;
-  right:-100%;
+  right: -100%;
   width: 180px;
-  height:80%;
+  height: 80%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
   text-align: center;
   background-color: #000000;
   color: #FFFFFF;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
 }
 
 .menu__item {
@@ -260,7 +259,7 @@ h2::after {
   color: #000000;
 }
 .team_section {
-  background: url(../img/bg-2.png) no-repeat;
+  // background: url(../img/bg-2.png) no-repeat;
   background-size:cover;
   color: #FFFFFF;
   padding: 50px 0 100px 0;
@@ -324,9 +323,9 @@ input {
   align-content: center;
 }
 .specialities_section {
-  background: url(../img/bg-3.png) no-repeat;
+  // background: url(../img/bg-3.png) no-repeat;
   background-size:cover;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0 50px 0;
 }
 .specialities_image img {
   border-radius: 5px;
@@ -341,9 +340,8 @@ input {
 .slider{
   max-width: 90%;
   position: relative;
-  margin: auto;
+  margin: auto auto 15px auto;
   height: 600px;
-  margin-bottom: 15px;
 }
 /* Картинка мастабируется по отношению к родительскому элементу */
 /*.slider .item img {
@@ -356,7 +354,6 @@ input {
 .slider .prev, .slider .next {
   cursor: pointer;
   position: absolute;
-  top: 0;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -474,7 +471,7 @@ input {
   font-size: 14px;
 }
 .main_events {
-  background: url(../img/bg-4.png) no-repeat;
+  // background: url(../img/bg-4.png) no-repeat;
   background-size:cover;
   padding: 50px 0 50px 0;
 }
@@ -496,7 +493,7 @@ input {
 }
 .vertical_text {
   background-color: #000000;
-  padding: 20px 25px 0px 25px;
+  padding: 20px 25px 0 25px;
   text-orientation: mixed;
   height: 475px;
   border-radius: 5px;
@@ -579,7 +576,7 @@ input {
 .map {
   width: 100%;
   height: 475px;
-  background-image: url(../img/map.png);
+  // background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -641,7 +638,7 @@ input {
     display: none;
   }
   .header_button_booking {
-    margin:0 0 20px 0;
+    margin: 0 0 20px 0;
   }
   .hamburger_menu {
     display: block;
@@ -661,24 +658,24 @@ input {
     height: 400px;
   }
   .events_image-1, .events_image-2 {
-    width:80%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .events_image-2 {
-    margin-top:30px;
+    margin-top: 30px;
   }
   .vertical_text {
-    writing-mode:lr-tb;
+    writing-mode: lr-tb;
     width: 400px;
     text-align: center;
     height: auto;
   }
   .vertical_text-2 {
-    transform:none;
-    order:2;
+    transform: none;
+    order: 2;
   }
   .gallery img {
     width: 25%;
@@ -686,19 +683,19 @@ input {
 
   }
   .group_menu ul {
-    flex-basis:33%;
+    flex-basis: 33%;
   }
   .slider {
-    height:800px;
+    height: 800px;
   }
   .slideText {
-    width:100%;
-    position:sticky;
+    width: 100%;
+    position: sticky;
   }
   .about_us .container, .item, .team, .booking, .events_images, .header_buttons {
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .image {
     width: 350px;
@@ -716,13 +713,13 @@ input {
     font-size: 16px;
   }
   .contact_button {
-    width:100%;
+    width: 100%;
   }
   .form p {
-    width:100%;
+    width: 100%;
   }
   .item img {
-    position:sticky;
+    position: sticky;
   }
 }
 @media screen and (max-width: 425px) {
@@ -741,7 +738,6 @@ input {
   .main_logo {
     display: block;
     position: fixed;
-
     top: 5%;
     left: 5%;
   }
@@ -757,24 +753,24 @@ input {
     height: 300px;
   }
   .events_image-1, .events_image-2 {
-    width:80%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .events_image-2 {
-    margin-top:30px;
+    margin-top: 30px;
   }
   .vertical_text {
-    writing-mode:lr-tb;
+    writing-mode: lr-tb;
     width: 300px;
     text-align: center;
     height: auto;
   }
   .vertical_text-2 {
-    transform:none;
-    order:2;
+    transform: none;
+    order: 2;
   }
   .gallery img{
     width: 25%;
@@ -782,27 +778,27 @@ input {
 
   }
   .group_menu ul{
-    flex-basis:40%;
+    flex-basis: 40%;
   }
 
   .slider {
-    height:800px;
+    height: 800px;
   }
   .slideText {
-    width:100%;
-    position:sticky;
+    width: 100%;
+    position: sticky;
   }
   .group_menu ul {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
   }
 
   .about_us .container, .item, .team, .booking, .events_images, .header_buttons  {
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .image {
     width: 300px;
@@ -820,28 +816,28 @@ input {
     font-size: 12px;
   }
   .header_button {
-    width:150px;
+    width: 150px;
   }
   h2 {
     font-size: 30px;
   }
   .gallery {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
   .gallery img {
-    width:50%;
+    width: 50%;
   }
   .contact_button {
-    width:100%;
+    width: 100%;
   }
   .form p {
-    width:100%;
+    width: 100%;
   }
   .group_menu ul:last-child{
     display: none;
   }
   .item img {
-    position:sticky;
+    position:  sticky;
   }
 }
 @media screen and (max-width: 320px) {
@@ -875,24 +871,24 @@ input {
     height: 200px;
   }
   .events_image-1, .events_image-2 {
-    width:80%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .events_image-2 {
-    margin-top:30px;
+    margin-top: 30px;
   }
   .vertical_text {
-    writing-mode:lr-tb;
+    writing-mode: lr-tb;
     width: 200px;
     text-align: center;
     height: auto;
   }
   .vertical_text-2 {
-    transform:none;
-    order:2;
+    transform: none;
+    order: 2;
   }
   .gallery img {
     width: 25%;
@@ -902,24 +898,24 @@ input {
     display: none;
   }
   .slider {
-    height:580px;
+    height: 580px;
   }
   .slideText {
-    width:100%;
-    position:sticky;
+    width: 100%;
+    position: sticky;
   }
 
   .group_menu ul {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
   .about_us .container, .item, .team, .booking, .events_images, .header_buttons  {
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .image {
     width: 200px;
@@ -949,19 +945,19 @@ input {
     font-size: 26px;
   }
   .gallery {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
   .gallery img {
-    width:50%;
+    width: 50%;
   }
   .contact_button {
-    width:100%;
+    width: 100%;
   }
   .form p {
-    width:100%;
+    width: 100%;
   }
   .item img {
-    position:sticky;
+    position: sticky;
   }
 }
 @import 'fonts';
