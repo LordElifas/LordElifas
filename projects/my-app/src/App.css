@@ -1,0 +1,120 @@
+.App {
+  font-size: 18px;
+}
+
+.wrap {
+  position: relative;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment {
+  width: 90%;
+  border: 1px solid #EDEEED;
+  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+  margin: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  background: seashell;
+
+}
+
+.sort-block {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 100px 0;
+}
+
+.sort-block p {
+  font-weight: bold;
+}
+
+.sort-types button {
+  font-size: 14px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.card-comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment input {
+  background: seashell;
+}
+
+.comments-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comments-item-delete {
+  cursor: pointer;
+  color: darkred;
+}
+
+.comment-actions {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.button-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  border: 2px solid #f2f2f2;
+  background: none;
+  display: inline-block;
+  line-height: 2;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #125688;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+button:hover {
+  border-color: #125688;
+  outline: 0;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  outline: none;
+  resize: vertical;
+  font-size: 16px;
+}
+
+.error-message {
+  position: absolute;
+  left: 40%;
+  top: -80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  max-width: 240px;
+  color: #fff;
+  background: linear-gradient(20deg, rgba(255,0,0,1) 0%, rgba(200,0,0,1) 100%);
+  padding: 10px 20px;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+}
+
+
