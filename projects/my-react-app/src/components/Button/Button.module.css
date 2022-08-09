@@ -1,0 +1,113 @@
+.default {
+    position: relative;
+    font-family: var(--font-family);
+    color: var(--white-color);
+    background-color: var(--brand-primary);
+    width: 100%;
+    padding: var(--default-indent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    border-radius: var(--small-border-radius);
+    text-transform: uppercase;
+    cursor: pointer;
+    min-height: 60px;
+}
+
+.rounded {
+    border-radius: 14px;
+}
+
+.small {
+    min-height: unset;
+    line-height: 16px;
+    font-size: 12px;
+    padding: calc(var(--default-border-radius) / 2) var(--default-border-radius);
+}
+
+.default:hover {
+    background-color: var(--brand-primary-hover);
+    color: var(--white-color);
+}
+
+.rounded {
+    border-radius: 14px;
+}
+
+.small {
+    min-height: unset;
+    line-height: 16px;
+    font-size: 12px;
+    padding: calc(var(--default-border-radius) / 2) var(--default-border-radius);
+}
+
+.default:disabled {
+    pointer-events: none;
+    color: var(--icon-color);
+    background-color: var(--card-color-hover);
+    animation: none;
+}
+
+.animated {
+    animation: pulsar 2s infinite;
+}
+
+.popupBtnAgree {
+    background-color: var(--card-color);
+    border: solid 2px;
+    border-color: var(--background-color);
+}
+
+.popupBtnAgree:active {
+    border-color: var(--black-color);
+}
+
+.popupBtnDisagree {
+    background-color: var(--background-color);
+}
+
+.popupBtnDisagree:active {
+    background-color: var(--black-color);
+}
+
+.cardHoverColor {
+    background-color: var(--card-color-hover);
+    color: var(--icon-color);
+}
+
+.contactUsBtn {
+    background-color: var(--card-color-hover);
+    color: var(--white-color);
+}
+
+.lightBorder {
+    border: solid 2px var(--text-secondary);
+}
+
+.PayPal {
+    background: var(--paypal-button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paypalImg {
+    max-width: 96px;
+}
+
+.optionLayout {
+    text-align: left;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--white-color);
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 0 var(--brand-primary);
+    }
+    100% {
+        box-shadow: 0 0 0 10px transparent;
+    }
+}
