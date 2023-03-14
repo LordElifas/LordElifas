@@ -2,7 +2,6 @@
 
 .idea
 .vscode
-.editorconfig
 
 build
 dist
